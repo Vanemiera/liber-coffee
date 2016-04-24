@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('liber-coffe', ['ngRoute'])
+angular.module('liber-coffee', ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/test'});
 }])
