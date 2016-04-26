@@ -8,20 +8,18 @@
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body ng-controller="LoadoutCtrl">
-  <p>Stuff here</p>
+  <p ng-click="rollEverything()">Stuff here</p>
   <div id="player">
-    <div id="perk">
+    <div id="perk" >
+      <p ng-bind-template="{{perk.name}}" ng-click="rollPerk()"></p>
     </div>
     <div id="primary">
+      <p ng-bind-template="{{primary.name}}" ng-click="rollPrimary()"></p>
     </div>
     <div id="stratagems">
-      <div id="stratagem1">
+      <div ng-repeat="stratagem in stratagems">
+        <p ng-bind-template="{{stratagem.name}}" ng-click="rollStratagem($index)"></p>
       </div>
-      <div id="stratagem2">
-      </div>
-      <div id="stratagem3">
-      </div>
-      <div id="stratagem4">
       </div>
     </div>
   </div>
