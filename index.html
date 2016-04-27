@@ -8,18 +8,23 @@
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body ng-controller="LoadoutCtrl">
-  <p ng-click="rollEverything()">Stuff here</p>
   <div id="player">
-    <div id="perk" >
-      <p ng-bind-template="{{perk.name}}" ng-click="rollPerk()"></p>
+    <h1>PERKS</h1>
+    <div id="perk" ng-click="rollPerk()" >
+      <h1 ng-bind-template="{{perk.name}}"></h1>
     </div>
-    <div id="primary">
-      <p ng-bind-template="{{primary.name}}" ng-click="rollPrimary()"></p>
+    <h1>PRIMARY WEAPON</h1>
+    <div id="primary" ng-click="rollPrimary()">
+      <h1 ng-bind-template="{{primary.name}}"></h1>
     </div>
+    <h1>STRATAGEMS</h1>
     <div id="stratagems">
-      <div ng-repeat="stratagem in stratagems">
-        <p ng-bind-template="{{stratagem.name}}" ng-click="rollStratagem($index)"></p>
+      <div ng-repeat="stratagem in stratagems" ng-click="rollStratagem($index)">
+        <h1 ng-bind-template="{{stratagem.name.substring(0, 5)}}"></h1>
       </div>
+      </div>
+      <div id="randomizer"  ng-click="rollEverything()">
+        <h1 class="button">RANDOMIZE</h1>
       </div>
     </div>
   </div>

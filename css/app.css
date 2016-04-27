@@ -1,29 +1,64 @@
 #player {
-  background-color: black;
-  height: 640px;
-  width: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /*height: 587px;*/
+  height: 455px;
+  width: 318px;
   position: absolute;
 }
 
-#player > * {
+#player > div {
   background-color: darkgray;
-  height: 30.6%;
-  margin: 3%;
+  width: 302px;
+  margin: 6px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#perk {
+  height: 115px;
 }
 
 #primary {
   background-image: url("../svg/P-2.svg");
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 115px;
 }
 
 #stratagems {
-
+  height: 76px;
 }
 
 #stratagems > * {
   background-color: red;
-  margin: 1%;
-  height: 90%;
-  width: 23%;
+  margin: 5.5px;
+  height: 64px;
+  width: 64px;
   display: inline-block;
+}
+
+h1 {
+  color: lightgray;
+  font-family: monospace;
+  font-size: 18px;
+  margin: 3px;
+  text-shadow: 1px 1px 0px black;
+
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#randomizer {
+  height: 38px;
+}
+
+h1.button {
+  line-height: 38px;
+  text-align: center;
 }
