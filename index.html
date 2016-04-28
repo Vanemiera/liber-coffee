@@ -11,20 +11,20 @@
   <div id="player">
     <h1>PERKS</h1>
     <div id="perk" ng-click="rollPerk()" >
-      <h1 ng-bind-template="{{perk.name}}"></h1>
+      <h2 ng-bind-template="{{perk.name}}"></h1>
     </div>
     <h1>PRIMARY WEAPON</h1>
     <div id="primary" ng-click="rollPrimary()">
-      <h1 ng-bind-template="{{primary.name}}"></h1>
+      <h2 ng-bind-template="{{primary.name}}"></h1>
     </div>
     <h1>STRATAGEMS</h1>
     <div id="stratagems">
       <div ng-repeat="stratagem in stratagems" ng-click="rollStratagem($index)">
-        <h1 ng-bind-template="{{stratagem.name.substring(0, 5)}}"></h1>
+        <h2 ng-bind-template="{{stratagem.name.substring(0, 5)}}"></h1>
       </div>
       </div>
       <div id="randomizer"  ng-click="rollEverything()">
-        <h1 class="button">RANDOMIZE</h1>
+        <h2 class="button">RANDOMIZE</h1>
       </div>
     </div>
   </div>

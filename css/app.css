@@ -38,9 +38,13 @@
   display: inline-block;
 }
 
-h1 {
-  color: lightgray;
-  font-family: monospace;
+@font-face {
+  font-family: handelGothic;
+  src: url("../font/Handel_Gothic_D_Bold.ttf")
+}
+
+h1, h2 {
+  font-family: handelGothic;
   font-size: 18px;
   margin: 3px;
   text-shadow: 1px 1px 0px black;
@@ -54,11 +58,19 @@ h1 {
   user-select: none;
 }
 
+h1 {
+  color: lightgray;
+}
+
+h2 {
+  color: white;
+}
+
 #randomizer {
   height: 38px;
 }
 
-h1.button {
+.button {
   line-height: 38px;
   text-align: center;
 }
