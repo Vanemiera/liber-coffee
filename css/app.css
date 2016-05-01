@@ -1,13 +1,24 @@
+body {
+  background-image: url("../img/wallpaper_helldivers.jpg");
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
 #player {
-  background-color: rgba(0, 0, 0, 0.5);
-  /*height: 587px;*/
+  background: rgba(50, 50, 50, 0.8); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
+    background: -o-linear-gradient(rgba(50, 50, 50, 0.9), rgba(0, 0, 255, 0.5));
+    background: -moz-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
+    background: linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
   height: 455px;
   width: 318px;
-  position: absolute;
+  border: 2px solid black;
+  margin: auto;
 }
 
 #player > div {
-  background-color: darkgray;
+  background-color: rgba(80, 80, 80, 0.7);
   width: 302px;
   margin: 6px;
   margin-left: auto;
@@ -22,10 +33,12 @@
 }
 
 #stratagems > * {
+  border: 1.5px solid rgba(0,0,0,0.5);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 5.5px;
+  background-clip: border-box;
+  margin: 4px;
   height: 64px;
   width: 64px;
   display: inline-block;
@@ -33,14 +46,14 @@
 
 @font-face {
   font-family: handelGothic;
-  src: url("../font/Handel_Gothic_D_Bold.ttf")
+  src: url("../font/Handel_Gothic_D_Bold.ttf");
 }
 
 h1, h2 {
   font-family: handelGothic;
   font-size: 18px;
   margin: 3px;
-  text-shadow: 1px 1px 0px black;
+  text-shadow: 0.5px 1.5px 1px black;
 
   cursor: default;
   -webkit-touch-callout: none;
