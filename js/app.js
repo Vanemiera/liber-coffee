@@ -23,11 +23,16 @@ var allPrimaries = [
 ];
 
 var allStratagems = [
-  {name: "Turret"},
-  {name: "Mech"},
-  {name: "Machine Gun"},
-  {name: "Ammo"},
-  {name: "Vindicator"}
+  {
+    name: "A/MG-II Minigun Turret",
+    img: "MG-II",
+    color: "125, 159, 99"
+  },
+  {
+    name: "EAT-17",
+    img: "EAT-17",
+    color: "76, 116, 161"
+  }
 ];
 
 var getRandomPerk = function() {
@@ -40,7 +45,7 @@ var getRandomPrimary = function() {
 
 var getRandomStratagem = function(slot) {
   var rndStrat = allStratagems[Math.floor(Math.random()*allStratagems.length)];
-  var newStrat = {slot: slot, name: rndStrat.name};
+  var newStrat = {slot:slot, name:rndStrat.name, img:rndStrat.img, color:rndStrat.color};
   return newStrat;
 };
 

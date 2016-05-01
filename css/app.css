@@ -22,7 +22,9 @@
 }
 
 #stratagems > * {
-  background-color: red;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 5.5px;
   height: 64px;
   width: 64px;
