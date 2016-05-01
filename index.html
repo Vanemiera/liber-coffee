@@ -10,12 +10,12 @@
 <body ng-controller="LoadoutCtrl">
   <div id="player">
     <h1>PERKS</h1>
-    <div id="perk" ng-click="rollPerk()" >
+    <div id="perk" ng-click="rollPerk()" ng-style="{'background-image':'url(svg/'+perk.img+'.svg)'}">
       <h2 ng-bind-template="{{perk.name}}"></h1>
     </div>
     <h1>PRIMARY WEAPON</h1>
-    <div id="primary" ng-click="rollPrimary()">
-      <h2 ng-bind-template="{{primary.name}}"></h1>
+    <div id="primary" ng-click="rollPrimary()" ng-style="{'background-image':'url(svg/'+primary.img+'.svg)'}">
+      <h2 ng-bind-template="{{primary.name}}"></h2>
     </div>
     <h1>STRATAGEMS</h1>
     <div id="stratagems">

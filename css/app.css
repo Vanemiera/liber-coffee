@@ -14,20 +14,11 @@
   margin-right: auto;
 }
 
-#perk {
-  height: 115px;
-}
-
-#primary {
-  background-image: url("../svg/P-2.svg");
+#perk, #primary {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   height: 115px;
-}
-
-#stratagems {
-  height: 76px;
 }
 
 #stratagems > * {

@@ -1,19 +1,25 @@
 'use strict';
 
 var allPerks = [
-  {name: "Laser Sight"},
-  {name: "Cardio Accelerator"},
-  {name: "Auto-Injector"},
-  {name: "Strongarm"},
-  {name: "Smoke Grenades"}
+  {
+    name: "Laser Sight",
+    img: "Laser_Aim_Module"
+  },
+  {
+    name: "Auto-Injector",
+    img: "MD-99_Autoinjector"
+  }
 ];
 
 var allPrimaries = [
-  {name: "Liberator"},
-  {name: "Justice"},
-  {name: "Breaker"},
-  {name: "Punisher"},
-  {name: "Double Freedom"}
+  {
+    name: "Justice",
+    img: "AR-19"
+  },
+  {
+    name: "Patriot",
+    img: "AR-22C"
+  }
 ];
 
 var allStratagems = [
