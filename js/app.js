@@ -8,6 +8,10 @@ var allPerks = [
   {
     name: "Auto-Injector",
     img: "MD-99_Autoinjector"
+  },
+  {
+    name: "Cardio Accelerator",
+    img: "Cardio_Accelerator"
   }
 ];
 
@@ -22,16 +26,39 @@ var allPrimaries = [
   }
 ];
 
+var BGCOLOR_SUPPLY = "76, 116, 161";
+var BGCOLOR_DEFENSIVE = "125, 159, 99";
+
 var allStratagems = [
-  {
-    name: "A/MG-II Minigun Turret",
-    img: "MG-II",
-    color: "125, 159, 99"
-  },
   {
     name: "EAT-17",
     img: "EAT-17",
-    color: "76, 116, 161"
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "EXO-44 'Stomper' Exosuit",
+    img: "EXO-44",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "FLAM-40 'Incinerator'",
+    img: "FLAM-40",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "LAS-98 Laser Cannon",
+    img: "LAS-98",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "LIFT-850 Jump Pack",
+    img: "LIFT-850",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "A/MG-II Minigun Turret",
+    img: "MG-II",
+    color: BGCOLOR_DEFENSIVE
   }
 ];
 
