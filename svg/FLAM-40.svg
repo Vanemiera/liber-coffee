@@ -5,11 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   version="1.1"
-   id="svg2"
-   viewBox="0 0 300 300"
+   width="300"
    height="300"
-   width="300">
+   viewBox="0 0 300 300"
+   id="svg2"
+   version="1.1">
   <defs
      id="defs4" />
   <metadata
@@ -25,18 +25,18 @@
     </rdf:RDF>
   </metadata>
   <path
-     id="path4438"
+     style="fill:#9eb7bc;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;opacity:1"
      d="M 40,88.571428 84.285714,128.57143 92.142857,125 l -1.428571,-10 23.571424,-6.42857 4.28572,7.14286 21.42857,5.71428 2.14286,11.42857 30.71428,-1.42857 81.42857,56.42857 0,13.57143 -15,15 -15,-9.28571 -32.14285,20.71428 -40.71429,2.14286 -15,40 -13.57143,-1.42857 -13.57143,-17.85714 0,-10.71429 L 89.285714,212.14286 51.428571,184.28571 50,160 57.857143,153.57143 15,113.57143 Z"
-     style="fill:#9eb7bc;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;opacity:1" />
+     id="path4438" />
   <ellipse
-     ry="42.173866"
-     rx="50.760162"
-     cy="151.25504"
-     cx="214.40488"
+     rx="41.861858"
+     ry="41.974472"
+     style="opacity:1;fill:#b8cfd7;fill-opacity:1;stroke:none;stroke-opacity:1"
      id="path4440"
-     style="opacity:1;fill:#b8cfd7;fill-opacity:1;stroke:none;stroke-opacity:1" />
+     cx="214.40488"
+     cy="152.3307" />
   <path
-     id="path4444"
+     style="fill:#f6fafb;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;opacity:1"
      d="m 184.35284,109.08117 c 16.83404,-21.174343 11.6057,-51.433198 6.06091,-81.822357 38.60271,20.654435 75.55638,42.435043 60.10408,100.005097 8.26307,0.0405 12.89972,-10.79831 18.68782,-18.18274 28.41111,62.84038 -22.35647,73.36948 -34.34518,83.84266 9.7096,-20.13204 14.65855,-38.10015 9.59645,-51.51778 l -11.11168,17.67767 c 4.27599,-22.20248 -11.87757,-34.97594 -24.24366,-49.49747 3.01076,15.21881 5.71532,30.35014 -0.50508,42.93148 l -22.72843,-9.09137 c 9.38182,15.82572 9.20563,31.65145 6.56599,47.47717 -38.37267,-14.03642 -54.28426,-38.30201 -28.13634,-67.12439 3.07764,-14.32741 -0.39052,-28.654828 -1.66316,-42.982242 10.99239,4.424135 19.27057,12.467219 21.71828,28.284272 z"
-     style="fill:#f6fafb;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;opacity:1" />
+     id="path4444" />
 </svg>

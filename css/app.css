@@ -70,6 +70,8 @@ h1 {
 
 h2 {
   color: white;
+  line-height: 180%;
+  margin-left: 3%;
 }
 
 #randomizer {

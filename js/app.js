@@ -2,16 +2,48 @@
 
 var allPerks = [
   {
-    name: "Laser Sight",
+    name: "Laser Aim Module",
     img: "Laser_Aim_Module"
   },
   {
-    name: "Auto-Injector",
-    img: "MD-99_Autoinjector"
+    name: "MD-99 AutoInjector",
+    img: "MD-99"
   },
   {
     name: "Cardio Accelerator",
     img: "Cardio_Accelerator"
+  },
+  {
+    name: "Heavy Armor",
+    img: "Heavy_Armor"
+  },
+  {
+    name: "Incendiary Grenades",
+    img: "Incendiary_Grenades"
+  },
+  {
+    name: "Stun Grenades",
+    img: "Stun_Grenades"
+  },
+  {
+    name: "Smoke Grenades",
+    img: "Smoke_Grenades"
+  },
+  {
+    name: "Stratagem Priority",
+    img: "Stratagem_Priority"
+  },
+  {
+    name: "Displacement Field",
+    img: "Displacement_Field"
+  },
+  {
+    name: "Strong Arm",
+    img: "Strong_Arm"
+  },
+  {
+    name: "P-6 'Gunslinger'",
+    img: "P-6"
   }
 ];
 
@@ -110,7 +142,7 @@ angular.module('liber-coffee', ['ngRoute'])
     $scope.rollPerk();
     $scope.rollPrimary();
     $scope.rollallStratagems();
-  }
+  };
 
 
 });
