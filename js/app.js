@@ -44,6 +44,22 @@ var allPerks = [
   {
     name: "P-6 'Gunslinger'",
     img: "P-6"
+  },
+  {
+    name: "FLAM-24 'Pyro'",
+    img: "FLAM-24"
+  },
+  {
+    name: "PLAS-3 'Singe'",
+    img: "PLAS-3"
+  },
+  {
+    name: "All Terrain Boots",
+    img: "All_Terrain_Boots"
+  },
+  {
+    name: "Precision Call-In",
+    img: "Precision_Call-In"
   }
 ];
 
