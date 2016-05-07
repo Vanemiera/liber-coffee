@@ -210,13 +210,48 @@ var allStratagems = [
     color: BGCOLOR_SUPPLY
   },
   {
-    name: "EXO-44 'Stomper' Exosuit",
-    img: "EXO-44",
+    name: "AD-334 'Guard Dog'",
+    img: "AD-334",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "AD-289 'Angel'",
+    img: "AD-289",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "Resupply Pack",
+    img: "Resupply_Pack",
     color: BGCOLOR_SUPPLY
   },
   {
     name: "LIFT-850 Jump Pack",
     img: "LIFT-850",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "SH-32 Directional Kinetic Shield",
+    img: "SH-32",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "SH-20 Shield Generator Pack",
+    img: "SH-20",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "REP-80",
+    img: "REP-80",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "REC-6 'Demolisher'",
+    img: "REC-6",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "EXO-44 'Stomper' Exosuit",
+    img: "EXO-44",
     color: BGCOLOR_SUPPLY
   },
   {
