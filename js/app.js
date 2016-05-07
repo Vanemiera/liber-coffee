@@ -65,12 +65,88 @@ var allPerks = [
 
 var allPrimaries = [
   {
-    name: "Justice",
+    name: "AR-19 'Liberator'",
     img: "AR-19"
   },
   {
-    name: "Patriot",
+    name: "AR-20L 'Justice'",
+    img: "AR-20L"
+  },
+  {
+    name: "AR-22C 'Patriot'",
     img: "AR-22C"
+  },
+  {
+    name: "SG-225 'Breaker'",
+    img: "SG-225"
+  },
+  {
+    name: "SG-8 'Punisher'",
+    img: "SG-8"
+  },
+  {
+    name: "DBS-2 'Double Freedom'",
+    img: "DBS-2"
+  },
+  {
+    name: "SMG-45 'Defender'",
+    img: "SMG-45"
+  },
+  {
+    name: "MP-98 'Knight'",
+    img: "MP-98"
+  },
+  {
+    name: "RX-1 Rail Gun",
+    img: "RX-1"
+  },
+  {
+    name: "LAS-5 'Scythe'",
+    img: "LAS-5"
+  },
+  {
+    name: "LAS-13 'Trident'",
+    img: "LAS-13"
+  },
+  {
+    name: "AC-3 Arc Thrower",
+    img: "AC-3"
+  },
+  {
+    name: "MG-105 'Stalwart'",
+    img: "MG-105"
+  },
+  {
+    name: "SMG-34 'Ninja'",
+    img: "SMG-34"
+  },
+  {
+    name: "LHO-63 'Camper'",
+    img: "LHO-63"
+  },
+  {
+    name: "AR-14D 'Paragon'",
+    img: "AR-14D"
+  },
+  {
+    name: "CR-9 'Supressor'",
+    img: "CR-9"
+  },
+  {
+    name: "PLAS-1 'Scorcher'",
+    img: "PLAS-1"
+  },
+  {
+    name: "LAS-16 'Sickle'",
+    img: "LAS-16"
+  },
+  {
+    name: "LAS-12 'Tanto'",
+    img: "LAS-12"
+  },
+  {
+    name: "AC-5 Arc Shotgun",
+    img: "AC-5"
   }
 ];
 

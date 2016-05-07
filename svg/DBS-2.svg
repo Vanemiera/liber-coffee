@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg4136"
+   viewBox="0 0 600.00001 300"
+   height="115"
+   width="302">
+  <defs
+     id="defs4138" />
+  <metadata
+     id="metadata4141">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="path4292"
+     transform="matrix(2.6086957,0,0,2.6086957,-93.913045,0)"
+     d="M 118.33398 56.787109 L 109.31055 63.396484 L 98.505859 63.396484 L 97.361328 61.107422 L 75.753906 61.107422 L 75.753906 81.953125 L 84.396484 81.699219 L 105.11523 76.742188 L 114.14062 76.742188 L 114.14062 80.935547 C 109.35106 86.126463 107.87686 90.940776 106.38672 95.806641 L 117.31641 99.494141 L 118.58789 97.078125 L 116.80859 96.189453 C 116.94986 92.319826 118.88625 88.192706 121.38477 83.986328 L 131.55273 83.986328 L 133.45898 75.978516 L 134.98438 75.978516 L 134.98438 78.011719 L 138.66992 78.011719 L 138.66992 75.597656 L 158.88086 75.597656 L 158.88086 74.453125 L 164.0918 74.453125 L 164.0918 72.292969 L 212.77344 72.292969 L 212.77344 62.125 L 209.97656 62.125 L 208.70508 63.904297 L 163.83789 63.904297 L 163.83789 62.378906 L 159.64258 62.378906 L 159.64258 61.361328 L 154.43164 61.361328 L 154.43164 60.21875 L 133.58594 60.21875 L 133.58594 58.693359 L 119.98633 58.693359 L 119.98633 56.787109 L 118.33398 56.787109 z M 125.32422 76.615234 L 130.66406 76.615234 L 129.51953 82.460938 L 123.03711 82.460938 L 125.32422 76.615234 z "
+     style="fill:#c5c5c5;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;opacity:1" />
+</svg>
