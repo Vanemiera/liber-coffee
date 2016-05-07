@@ -155,13 +155,33 @@ var BGCOLOR_DEFENSIVE = "125, 159, 99";
 
 var allStratagems = [
   {
-    name: "EAT-17",
-    img: "EAT-17",
+    name: "Resupply",
+    img: "Resupply",
     color: BGCOLOR_SUPPLY
   },
   {
-    name: "EXO-44 'Stomper' Exosuit",
-    img: "EXO-44",
+    name: "MG-94 Machine Gun",
+    img: "MG-94",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "LAS-98 Laser Cannon",
+    img: "LAS-98",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "AC-22 'Dum-Dum'",
+    img: "AC-22",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "'Obliterator' Grenade Launcher",
+    img: "Obliterator",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "M-25 'Rumbler'",
+    img: "M-25",
     color: BGCOLOR_SUPPLY
   },
   {
@@ -170,8 +190,28 @@ var allStratagems = [
     color: BGCOLOR_SUPPLY
   },
   {
-    name: "LAS-98 Laser Cannon",
-    img: "LAS-98",
+    name: "TOX-13 'Avenger'",
+    img: "TOX-13",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "RL-112 Recoilless Rifle",
+    img: "RL-112",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "EAT-17",
+    img: "EAT-17",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "MLS-4X 'Commando'",
+    img: "MLS-4X",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "EXO-44 'Stomper' Exosuit",
+    img: "EXO-44",
     color: BGCOLOR_SUPPLY
   },
   {

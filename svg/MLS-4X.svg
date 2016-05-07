@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="300"
+   height="300"
+   viewBox="0 0 300 300"
+   id="svg2"
+   version="1.1">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="path4342"
+     d="M 254.55469 58.792969 L 248.83398 63.558594 L 221.18555 63.558594 L 215.14844 59.109375 L 178.91992 79.449219 L 171.60938 79.449219 L 141.81641 96.53125 L 131.56836 86.28125 L 117.10742 86.28125 L 108.05078 95.339844 L 96.292969 95.339844 L 89.935547 100.74219 L 88.347656 114.72461 L 81.039062 120.44531 L 75.634766 120.44531 L 74.681641 133.15625 L 53.390625 141.41992 L 36.546875 134.74609 L 36.546875 140.7832 L 15.572266 157.62695 L 31.460938 194.80859 L 44.808594 195.12695 L 49.257812 203.54883 L 55.455078 203.54883 L 62.605469 196.39844 L 75 215.7832 L 94.384766 215.7832 L 107.41602 196.39844 C 115.27726 207.18881 119.88446 221.04043 141.41992 218.96094 L 184.64062 218.96094 L 184.64062 188.13477 C 200.70466 190.21126 204.98488 182.11392 202.43555 168.11523 L 273.94141 148.72852 L 270.12695 136.65234 L 275.84766 128.39062 L 270.12695 72.457031 L 254.55469 58.792969 z M 117.97656 95.507812 L 125.39062 101.57617 L 109.88672 109.44141 L 108.53711 100.90234 L 117.97656 95.507812 z "
+     style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+  <circle
+     r="12.235169"
+     cy="88.506355"
+     cx="226.74786"
+     id="path4326"
+     style="opacity:1;fill:#b6cbcc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-opacity:1" />
+  <use
+     height="100%"
+     width="100%"
+     transform="translate(29.237287,-4.4491524)"
+     id="use4328"
+     xlink:href="#path4326"
+     y="0"
+     x="0" />
+  <use
+     height="100%"
+     width="100%"
+     transform="translate(4.1313558,30.190677)"
+     id="use4334"
+     xlink:href="#path4326"
+     y="0"
+     x="0" />
+  <use
+     height="100%"
+     width="100%"
+     transform="translate(33.050847,25.741525)"
+     id="use4338"
+     xlink:href="#path4326"
+     y="0"
+     x="0" />
+</svg>
