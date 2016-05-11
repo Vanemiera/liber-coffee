@@ -152,6 +152,7 @@ var allPrimaries = [
 
 var BGCOLOR_SUPPLY = "76, 116, 161";
 var BGCOLOR_DEFENSIVE = "125, 159, 99";
+var BGCOLOR_OFFENSIVE = "139, 91, 81";
 
 var allStratagems = [
   {
@@ -255,9 +256,134 @@ var allStratagems = [
     color: BGCOLOR_SUPPLY
   },
   {
+    name: "EXO-48 'Obsidian' Exosuit",
+    img: "EXO-48",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "EXO-51 'Lumberer' Exosuit",
+    img: "EXO-51",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "MC-109 'Hammer' Motorcycle",
+    img: "MC-109",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "TD-110 'Bastion'",
+    img: "TD-110",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "M5 APC",
+    img: "M5",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "M5-32 HAV",
+    img: "M5-32",
+    color: BGCOLOR_SUPPLY
+  },
+  {
+    name: "'Humblebee' UAV drone",
+    img: "UAV",
+    color: BGCOLOR_DEFENSIVE
+  },
+  {
+    name: "Distractor Beacon",
+    img: "Distractor_Beacon",
+    color: BGCOLOR_DEFENSIVE
+  },
+  {
+    name: "AT-47 Anti-Tank Emplacement",
+    img: "AT-47",
+    color: BGCOLOR_DEFENSIVE
+  },
+  {
     name: "A/MG-II Minigun Turret",
     img: "MG-II",
     color: BGCOLOR_DEFENSIVE
+  },
+  {
+    name: "A/RX-34 Railcannon Turret",
+    img: "RX-34",
+    color: BGCOLOR_DEFENSIVE
+  },
+  {
+    name: "A/AC-6 Tesla Tower",
+    img: "AC-6",
+    color: BGCOLOR_DEFENSIVE
+  },
+  {
+    name: "Airdropped Mines",
+    img: "Airdropped_Mines",
+    color: BGCOLOR_DEFENSIVE
+  },
+  {
+    name: "Anti-Personnel Barrier",
+    img: "Anti-Personnel_Barrier",
+    color: BGCOLOR_DEFENSIVE
+  },
+  {
+    name: "Airdropped Stun Mines",
+    img: "Airdropped_Stun_Mines",
+    color: BGCOLOR_DEFENSIVE
+  },
+  {
+    name: "Static Field Conductors",
+    img: "Static_Field_Conductors",
+    color: BGCOLOR_DEFENSIVE
+  },
+  {
+    name: "Airstrike",
+    img: "Airstrike",
+    color: BGCOLOR_OFFENSIVE
+  },
+  {
+    name: "'Vindicator' Dive Bomb",
+    img: "Vindicator",
+    color: BGCOLOR_OFFENSIVE
+  },
+  {
+    name: "Strafing Run",
+    img: "Strafing_Run",
+    color: BGCOLOR_OFFENSIVE
+  },
+  {
+    name: "Close Air Support",
+    img: "Close_Air_Support",
+    color: BGCOLOR_OFFENSIVE
+  },
+  {
+    name: "Incendiary Bombs",
+    img: "Incendiary_Bombs",
+    color: BGCOLOR_OFFENSIVE
+  },
+  {
+    name: "Missile Barrage",
+    img: "Missile_Barrage",
+    color: BGCOLOR_OFFENSIVE
+  },
+  {
+    name: "Thunderer Barrage",
+    img: "Thunderer_Barrage",
+    color: BGCOLOR_OFFENSIVE
+  },
+  {
+    name: "Orbital Laser Strike",
+    img: "Orbital_Laser_Strike",
+    color: BGCOLOR_OFFENSIVE
+  },
+  {
+    name: "'Shredder' Missile Strike",
+    img: "Shredder",
+    color: BGCOLOR_OFFENSIVE
+  },
+  {
+    name: "Railcannon Strike",
+    img: "Railcannon_Strike",
+    color: BGCOLOR_OFFENSIVE
   }
 ];
 

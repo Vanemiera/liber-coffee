@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 300 300"
+   height="300"
+   width="300">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="rect4453"
+     d="M 146.29102 14.835938 L 146.29102 142.25 L 18.876953 142.25 L 18.876953 154.38477 L 146.29102 154.38477 L 146.29102 281.79883 L 158.42578 281.79883 L 158.42578 154.38477 L 285.83984 154.38477 L 285.83984 142.25 L 158.42578 142.25 L 158.42578 14.835938 L 146.29102 14.835938 z "
+     style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <circle
+     r="102.24585"
+     cy="147.86717"
+     cx="153.03169"
+     id="path4449"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none" />
+  <use
+     height="100%"
+     width="100%"
+     transform="matrix(0.56207469,0,0,0.56207469,67.690601,65.42893)"
+     id="use4451"
+     xlink:href="#path4449"
+     y="0"
+     x="0" />
+  <path
+     id="path4442"
+     d="M 204.40105,14.102324 154.74089,147.39725 294.69792,117.46366 A 142.24532,142.24532 0 0 0 204.40105,14.102324 Z"
+     style="opacity:1;fill:#c8cec1;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <circle
+     r="19.550304"
+     cy="194.15869"
+     cx="59.99921"
+     id="path4458"
+     style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <use
+     height="100%"
+     width="100%"
+     transform="matrix(0.8045977,0,0,0.8045977,60.936817,86.253024)"
+     id="use4462"
+     xlink:href="#path4458"
+     y="0"
+     x="0" />
+</svg>

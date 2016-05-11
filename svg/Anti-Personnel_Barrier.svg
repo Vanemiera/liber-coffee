@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="300"
+   height="300"
+   viewBox="0 0 300 300"
+   id="svg2"
+   version="1.1">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="fill:#b4caa3;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;opacity:1"
+     d="M 61.572266 233.93359 L 39.101562 264.04492 L 149.23633 264.04492 L 154.60547 264.04492 L 264.74023 264.04492 L 242.26758 233.93359 L 158.65039 233.93359 L 145.19141 233.93359 L 61.572266 233.93359 z "
+     id="path4707" />
+  <ellipse
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:7;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path4712"
+     cx="95.729073"
+     cy="155.50752"
+     rx="46.291523"
+     ry="90.111168" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#path4712"
+     id="use4714"
+     transform="translate(55.729602,0)"
+     width="100%"
+     height="100%" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#use4714"
+     id="use4716"
+     transform="translate(56.628467,0)"
+     width="100%"
+     height="100%" />
+  <path
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 44.173729,217.69067 C 59.619663,204.80056 66.16809,206.73962 74.364407,205.9322 l -12.711864,-5.40254 -14.300848,6.03813 z"
+     id="path4718" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#path4718"
+     id="use4720" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#use4720"
+     id="use4738"
+     transform="matrix(0.84507817,0.53464276,-0.53464276,0.84507817,116.53216,-82.554761)"
+     width="100%"
+     height="100%" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#use4720"
+     id="use4740"
+     transform="matrix(0.84630312,0.53270163,-0.53270163,0.84630312,168.49008,-70.301794)"
+     width="100%"
+     height="100%" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#use4720"
+     id="use4742"
+     transform="matrix(0.9827403,0.18499055,-0.18499055,0.9827403,118.20213,-23.24487)"
+     width="100%"
+     height="100%" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#use4720"
+     id="use4746"
+     transform="matrix(0.89859647,-0.43877601,0.43877601,0.89859647,90.316888,-82.132865)"
+     width="100%"
+     height="100%" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#use4720"
+     id="use4748"
+     transform="matrix(0.52973471,-0.8481634,0.8481634,0.52973471,-51.695009,2.8985931)"
+     width="100%"
+     height="100%" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#use4720"
+     id="use4750"
+     transform="matrix(0.81570776,-0.57846422,0.57846422,0.81570776,-57.603478,-69.55047)"
+     width="100%"
+     height="100%" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#use4720"
+     id="use4752"
+     transform="matrix(0.91546025,0.40240841,-0.40240841,0.91546025,285.55659,-54.477335)"
+     width="100%"
+     height="100%" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#use4720"
+     id="use4754"
+     transform="matrix(0.74812941,0.66355286,-0.66355286,0.74812941,339.9126,19.378678)"
+     width="100%"
+     height="100%" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#use4720"
+     id="use4756"
+     transform="matrix(0.9959973,0.08938332,-0.08938332,0.9959973,154.30956,-94.079305)"
+     width="100%"
+     height="100%" />
+</svg>
