@@ -15,8 +15,8 @@
     "karma-junit-reporter": "^0.2.2",
     "protractor": "^2.1.0",
     "shelljs": "^0.2.6",
-    "angular": "~1.4.0",
-    "angular-route": "~1.4.0",
+    "angular": "1.4.10",
+    "angular-route": "1.4.10",
     "angular-loader": "~1.4.0",
     "angular-mocks": "~1.4.0"
   },
