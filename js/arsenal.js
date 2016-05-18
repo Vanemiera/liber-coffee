@@ -386,15 +386,22 @@ var allStratagems = [
 ];
 
 var getRandomPerk = function() {
-  return allPerks[Math.floor(Math.random()*allPerks.length)];
+  var id = Math.floor(Math.random()*allPerks.length);
+  var rndPerk = allPerks[id];
+  var newPerk = {name:rndPerk.name, img:rndPerk.img, id:id};
+  return newPerk;
 };
 
 var getRandomPrimary = function() {
-  return allPrimaries[Math.floor(Math.random()*allPrimaries.length)];
+  var id = Math.floor(Math.random()*allPrimaries.length);
+  var rndPrimary = allPrimaries[id];
+  var newPrimary = {name:rndPrimary.name, img:rndPrimary.img, id:id};
+  return newPrimary;
 };
 
 var getRandomStratagem = function(slot) {
-  var rndStrat = allStratagems[Math.floor(Math.random()*allStratagems.length)];
-  var newStrat = {slot:slot, name:rndStrat.name, img:rndStrat.img, color:rndStrat.color};
+  var id = Math.floor(Math.random()*allStratagems.length);
+  var rndStrat = allStratagems[id];
+  var newStrat = {slot:slot, name:rndStrat.name, img:rndStrat.img, color:rndStrat.color, id:id};
   return newStrat;
 };
