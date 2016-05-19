@@ -27,8 +27,10 @@
     <div id="randomizer"  ng-click="rollEverything()">
         <h2 class="button">RANDOMIZE</h2>
     </div>
-    <p>Share:</p>
-    <p>{{url}}</p>
+    <div id="share">
+      <h2>Share:</h2>
+      <input ng-model='url' readonly="true">
+    </div>
   </div>
 
   <script src="js/angular.js"></script>

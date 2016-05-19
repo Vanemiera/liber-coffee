@@ -1,33 +1,26 @@
 'use strict';
 
-var ints2Hex = function(bitCount, ints) {
-  var mask = Math.pow(2, bitCount) - 1;
-  var total = 0;
-  for (var i = 0; i<ints.length; i++) {
-    var addi =((ints[i] & mask) << i*bitCount) >>> 0;
-    total += addi;
+var BASE64 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_"
+
+var intsToB64Url = function(ints) {
+  var res = '';
+  for(var i=0;i<ints.length;i++){
+    res += BASE64.charAt(ints[i])
   }
-  var hex = total.toString(16);
-  while (hex.length*4 < ints.length*bitCount) {
-    hex = "0" + hex;
-  }
-  return hex;
+  return res
 };
 
-var hex2Ints = function(bitCount, hex) {
-  var mask = Math.pow(2, bitCount) - 1;
-  var total = parseInt("0x" + hex);
-  var count = Math.floor(hex.length*4/bitCount);
-  var ints = [];
-  for (var i = 0; i<count; i++) {
-    ints[i] = ((mask << i*bitCount) & total) >> i*bitCount;
+var b64UrlToInts = function(b64) {
+  var res = [];
+  for(var i=0;i<b64.length;i++){
+    res[i] = BASE64.indexOf(b64[i])
   }
-  return ints;
+  return res
 };
 
 var parseHash = function(hash) {
-  if (hash.match(/^(#\/)?([0-9a-f]{8,9},?){1,4}$/g)) {
-    return hash.match(/[0-9a-f]{8,9}/g);
+  if (hash.match(/^(#\/)?([\w-]{6},?){1}$/g)) {
+    return hash.match(/[\w-]{6}/g);
   } else {
     return;
   }
@@ -42,7 +35,7 @@ angular.module('liber-coffee', [])
 .controller('LoadoutCtrl', function($scope, $location){
 
   var calcHash = function() {
-    $scope.hash = '#/' + ints2Hex(6, [
+    $scope.hash = '#/' + intsToB64Url([
       $scope.perk.id,
       $scope.primary.id,
       $scope.stratagems[0].id,
@@ -54,7 +47,7 @@ angular.module('liber-coffee', [])
   };
 
   if (hashes) {
-    var ids = hex2Ints(6, hashes[0]);
+    var ids = b64UrlToInts(hashes[0]);
     $scope.perk = getPerk(ids[0]);
     $scope.primary = getPrimary(ids[1]);
     $scope.stratagems = [
