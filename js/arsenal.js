@@ -392,6 +392,12 @@ var getRandomPerk = function() {
   return newPerk;
 };
 
+var getPerk = function(id) {
+  var rndPerk = allPerks[id];
+  var newPerk = {name:rndPerk.name, img:rndPerk.img, id:id};
+  return newPerk;
+};
+
 var getRandomPrimary = function() {
   var id = Math.floor(Math.random()*allPrimaries.length);
   var rndPrimary = allPrimaries[id];
@@ -399,8 +405,20 @@ var getRandomPrimary = function() {
   return newPrimary;
 };
 
+var getPrimary = function(id) {
+  var rndPrimary = allPrimaries[id];
+  var newPrimary = {name:rndPrimary.name, img:rndPrimary.img, id:id};
+  return newPrimary;
+};
+
 var getRandomStratagem = function(slot) {
   var id = Math.floor(Math.random()*allStratagems.length);
+  var rndStrat = allStratagems[id];
+  var newStrat = {slot:slot, name:rndStrat.name, img:rndStrat.img, color:rndStrat.color, id:id};
+  return newStrat;
+};
+
+var getStratagem = function(id, slot) {
   var rndStrat = allStratagems[id];
   var newStrat = {slot:slot, name:rndStrat.name, img:rndStrat.img, color:rndStrat.color, id:id};
   return newStrat;

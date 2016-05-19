@@ -11,10 +11,11 @@ body {
   background: -o-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
   background: -moz-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
   background: linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
-  height: 455px;
   width: 318px;
   border: 2px solid black;
   margin: auto;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
 #player > div {
