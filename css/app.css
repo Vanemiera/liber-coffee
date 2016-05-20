@@ -5,46 +5,6 @@ body {
   background-color: black;
 }
 
-#player {
-  background: rgba(50, 50, 50, 0.8); /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
-  background: -o-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
-  background: -moz-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
-  background: linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
-  width: 318px;
-  border: 2px solid black;
-  margin: auto;
-  padding: 5px;
-  box-sizing: border-box;
-}
-
-#player > div {
-  background-color: rgba(80, 80, 80, 0.7);
-  width: 302px;
-  margin: 6px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#perk, #primary {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 115px;
-}
-
-#stratagems > * {
-  border: 1.5px solid rgba(0,0,0,0.5);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-clip: border-box;
-  margin: 4px;
-  height: 64px;
-  width: 64px;
-  display: inline-block;
-}
-
 @font-face {
   font-family: handelGothic;
   src: url("../font/Handel_Gothic_D_Bold.ttf");
@@ -75,8 +35,61 @@ h2 {
   margin-left: 3%;
 }
 
+#player {
+  background: rgba(50, 50, 50, 0.8); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
+  background: -o-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
+  background: -moz-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
+  background: linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
+  width: 318px;
+  border: 2px solid black;
+  margin: auto;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#player > div {
+  background-color: rgba(80, 80, 80, 0.7);
+  width: 302px;
+  margin: 6px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#perk, #primary {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 115px;
+}
+
+#perk:hover, #primary:hover{
+  background-color: rgba(211, 228, 15, 0.7);
+}
+
+#stratagems > * {
+  border: 1px solid rgba(0,0,0,0.5);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  margin: 4px;
+  height: 64px;
+  width: 64px;
+  display: inline-block;
+}
+
+#stratagems > *:hover {
+  border: 3px solid rgba(211, 228, 15, 0.7);
+  margin: 2px;
+}
+
 #randomizer {
   height: 38px;
+}
+
+#randomizer:hover{
+  background-color: rgba(211, 228, 15, 0.7);
 }
 
 .button {

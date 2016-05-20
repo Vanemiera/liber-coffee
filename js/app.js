@@ -1,21 +1,21 @@
 'use strict';
 
-var BASE64 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_"
+var BASE64 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_";
 
 var intsToB64Url = function(ints) {
   var res = '';
   for(var i=0;i<ints.length;i++){
-    res += BASE64.charAt(ints[i])
+    res += BASE64.charAt(ints[i]);
   }
-  return res
+  return res;
 };
 
 var b64UrlToInts = function(b64) {
   var res = [];
   for(var i=0;i<b64.length;i++){
-    res[i] = BASE64.indexOf(b64[i])
+    res[i] = BASE64.indexOf(b64[i]);
   }
-  return res
+  return res;
 };
 
 var parseHash = function(hash) {

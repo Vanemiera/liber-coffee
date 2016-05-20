@@ -15,14 +15,17 @@
     "karma-junit-reporter": "^0.2.2",
     "protractor": "^2.1.0",
     "shelljs": "^0.2.6",
+    "jquery": "~2.1.1",
     "angular": "1.4.10",
-    "angular-route": "1.4.10",
+    "angular-animate": "1.4.10",
     "angular-loader": "~1.4.0",
     "angular-mocks": "~1.4.0"
   },
   "scripts": {
     "prestart": "npm install",
     "start": "http-server -a localhost -p 8000 -c-1",
+
+    "copylibs": "util/copylibs",
 
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
