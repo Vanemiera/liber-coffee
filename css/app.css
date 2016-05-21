@@ -10,9 +10,13 @@ body {
   src: url("../font/Handel_Gothic_D_Bold.ttf");
 }
 
+img {
+  vertical-align: bottom;
+}
+
 .gothic {
   font-family: handelGothic;
-  font-size: 18px;
+  font-size: 1.15em;
   margin: 0.5em;
   text-shadow: 0.5px 1.5px 1px black;
   color: lightgray;
@@ -46,7 +50,7 @@ body {
   box-sizing: border-box;
 }
 
-.player div{
+.player > div{
   background-color: rgba(80, 80, 80, 0.7);
   width: 96%;
   margin: 2%;
@@ -64,21 +68,26 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
 }
 
 .itemWhide:hover{
   background-color: rgba(211, 228, 15, 0.7);
 }
 
-.stratagems img {
-  border: 2px solid rgba(0,0,0,0.5);
+.stratagems .shade {
+  display: inline-block;
   margin: 1%;
   width: 23%;
-  display: inline-block;
-  size: inherit;
-  box-sizing: border-box;
+  background: url("../svg/shade.svg");
+  background-size: cover;
 }
+
+.stratagems img {
+  border: 2px solid rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  width: 100%;
+}
+
 
 .stratagems img:hover {
   border: 3px solid rgba(211, 228, 15, 0.7);
@@ -91,6 +100,7 @@ body {
 .button {
   text-align: center;
   position: relative;
+  font-size: 1.5em;
 }
 
 .share {
@@ -103,4 +113,45 @@ body {
 .share input {
   margin: 1em;
   width: 100%;
+}
+
+ul.playerPicker {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* display: flex; */
+  display: none;
+}
+
+.playerIcon {
+  background: url("../svg/Player.svg");
+  background-repeat: no-repeat;
+  background-size: 400% 200%;
+  width: 25%;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.playerIcon:hover {
+  background-position-y: 100%;
+}
+
+.player2 {
+  background-position-x: 33.33%;
+}
+
+.player3 {
+  background-position-x: 66.66%;
+}
+
+.player4 {
+  background-position-x: 100%;
+}
+
+.playerIcon img {
+  opacity: 0;
+  width: 100%;
+  display: block;
 }

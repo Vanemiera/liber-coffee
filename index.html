@@ -10,6 +10,12 @@
 </head>
 <body ng-controller="LoadoutCtrl">
   <div class="player">
+    <!--><ul class="playerPicker">
+      <li class="playerIcon player1"><img src="svg/SH-20.svg" alt=""/></li>
+      <li class="playerIcon player2"><img src="svg/SH-20.svg" alt=""/></li>
+      <li class="playerIcon player3"><img src="svg/SH-20.svg" alt=""/></li>
+      <li class="playerIcon player4"><img src="svg/SH-20.svg" alt=""/></li>
+    </ul><!-->
     <p class="gothic">PERKS</p>
     <div class="itemWhide">
       <img class="itemPic" ng-click="rollPerk()" ng-src="svg/{{perk.img}}.svg"/>
@@ -22,21 +28,24 @@
     </div>
     <p class="gothic">STRATAGEMS</p>
     <div class="stratagems">
-      <img ng-repeat="stratagem in stratagems" ng-click="rollStratagem($index)"
-           ng-src="svg/{{stratagems[$index].img}}.svg"
+      <div class="shade" ng-repeat="stratagem in stratagems"
            ng-style="{'background-color':'rgb('+stratagems[$index].color+')'}">
+        <img ng-click="rollStratagem($index)"
+             ng-src="svg/{{stratagems[$index].img}}.svg">
+      </div>
     </div>
     <div class="randomizer"  ng-click="rollEverything()">
         <p class="gothic label button">RANDOMIZE</p>
     </div>
     <div class="share">
       <p class="gothic label">Share:</p>
-      <input ng-model="url" readonly="true">
+      <input ng-model="url" onclick="this.select();" ng-blur="calcHash()">
     </div>
   </div>
 
   <script src="js/angular.js"></script>
   <script src="js/arsenal.js"></script>
+  <script src="js/hash64.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
