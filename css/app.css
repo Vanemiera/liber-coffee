@@ -6,16 +6,16 @@ body {
 }
 
 @font-face {
-  font-family: handelGothic;
+  font-family: "handelGothic";
   src: url("../font/Handel_Gothic_D_Bold.ttf");
 }
 
-h1, h2 {
+.gothic {
   font-family: handelGothic;
   font-size: 18px;
-  margin: 3px;
+  margin: 0.5em;
   text-shadow: 0.5px 1.5px 1px black;
-
+  color: lightgray;
   cursor: default;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -25,83 +25,82 @@ h1, h2 {
   user-select: none;
 }
 
-h1 {
-  color: lightgray;
-}
-
-h2 {
+.label {
   color: white;
   line-height: 180%;
   margin-left: 3%;
+  position: absolute;
+  top: 0;
 }
 
-#player {
+.player {
   background: rgba(50, 50, 50, 0.8); /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
   background: -o-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
   background: -moz-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
   background: linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
-  width: 318px;
+  max-width: 25em;
+  min-width: 15em;
   border: 2px solid black;
   margin: auto;
-  padding: 5px;
   box-sizing: border-box;
 }
 
-#player > div {
+.player div{
   background-color: rgba(80, 80, 80, 0.7);
-  width: 302px;
-  margin: 6px;
+  width: 96%;
+  margin: 2%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  height: inherit;
 }
 
-#perk, #primary {
+.itemPic {
+  width: 100%;
+}
+
+.itemWhide {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 115px;
+  position: relative;
 }
 
-#perk:hover, #primary:hover{
+.itemWhide:hover{
   background-color: rgba(211, 228, 15, 0.7);
 }
 
-#stratagems > * {
-  border: 1px solid rgba(0,0,0,0.5);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-clip: border-box;
-  margin: 4px;
-  height: 64px;
-  width: 64px;
+.stratagems img {
+  border: 2px solid rgba(0,0,0,0.5);
+  margin: 1%;
+  width: 23%;
   display: inline-block;
+  size: inherit;
+  box-sizing: border-box;
 }
 
-#stratagems > *:hover {
+.stratagems img:hover {
   border: 3px solid rgba(211, 228, 15, 0.7);
-  margin: 2px;
 }
 
-#randomizer {
-  height: 38px;
-}
-
-#randomizer:hover{
+.randomizer:hover{
   background-color: rgba(211, 228, 15, 0.7);
 }
 
 .button {
-  line-height: 38px;
   text-align: center;
+  position: relative;
 }
 
-#share {
+.share {
   display: flex;
 }
 
-#share > input {
-  margin: 9px;
-  width: inherit;
+.share p {
+  position: relative;
+}
+.share input {
+  margin: 1em;
+  width: 100%;
 }

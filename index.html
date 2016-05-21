@@ -6,30 +6,32 @@
 <head>
   <title>Liber-Coffee</title>
   <link rel="stylesheet" href="css/app.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body ng-controller="LoadoutCtrl">
-  <div id="player">
-    <h1>PERKS</h1>
-    <div id="perk" ng-click="rollPerk()" ng-style="{'background-image':'url(svg/'+perk.img+'.svg)'}">
-      <h2 ng-bind-template="{{perk.name}}"></h2>
+  <div class="player">
+    <p class="gothic">PERKS</p>
+    <div class="itemWhide">
+      <img class="itemPic" ng-click="rollPerk()" ng-src="svg/{{perk.img}}.svg"/>
+      <p class="gothic label" ng-bind-template="{{perk.name}}"></p>
     </div>
-    <h1>PRIMARY WEAPON</h1>
-    <div id="primary" ng-click="rollPrimary()" ng-style="{'background-image':'url(svg/'+primary.img+'.svg)'}">
-      <h2 ng-bind-template="{{primary.name}}"></h2>
+    <p class="gothic">PRIMARY WEAPON</p>
+    <div class="itemWhide">
+      <img class="itemPic" ng-click="rollPrimary()" ng-src="svg/{{primary.img}}.svg"/>
+        <p class="gothic label" ng-bind-template="{{primary.name}}"></p>
     </div>
-    <h1>STRATAGEMS</h1>
-    <div id="stratagems">
-      <div ng-repeat="stratagem in stratagems" ng-click="rollStratagem($index)"
-           ng-style="{'background-image':'url(svg/'+stratagems[$index].img+'.svg)',
-                      'background-color':'rgb('+stratagems[$index].color+')'}">
-      </div>
+    <p class="gothic">STRATAGEMS</p>
+    <div class="stratagems">
+      <img ng-repeat="stratagem in stratagems" ng-click="rollStratagem($index)"
+           ng-src="svg/{{stratagems[$index].img}}.svg"
+           ng-style="{'background-color':'rgb('+stratagems[$index].color+')'}">
     </div>
-    <div id="randomizer"  ng-click="rollEverything()">
-        <h2 class="button">RANDOMIZE</h2>
+    <div class="randomizer"  ng-click="rollEverything()">
+        <p class="gothic label button">RANDOMIZE</p>
     </div>
-    <div id="share">
-      <h2>Share:</h2>
-      <input ng-model='url' readonly="true">
+    <div class="share">
+      <p class="gothic label">Share:</p>
+      <input ng-model="url" readonly="true">
     </div>
   </div>
 
