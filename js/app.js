@@ -38,6 +38,30 @@ angular.module('liber-coffee', ['arsenal', 'hash64'])
     $scope.calcHash();
   }
 
+  $scope.diceoptions = [
+    {
+      id: 1,
+      label: "Nice dice - Favourable weighting",
+    },
+    {
+      id: 2,
+      label: "Normal dice - Unweighted",
+    },
+    {
+      id: 3,
+      label: "Helldice - Punishing weighting",
+    },
+    {
+      id: 4,
+      label: "Community favourites",
+    },
+    {
+      id: 5,
+      label: "Community punishments",
+    }
+  ];
+  $scope.dicemode = $scope.diceoptions[0]
+
   $scope.rollPerk = function() {
     $scope.perk = arsenal.getRandomPerk();
     $scope.calcHash();

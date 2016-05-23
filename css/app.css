@@ -29,6 +29,28 @@ img {
   user-select: none;
 }
 
+img.topicon {
+  width: 100%;
+  margin: 0.5em auto 0 auto;
+  display: block;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: underline;
+  line-height: 30%;
+}
+
+.subtitle {
+  display: block;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  font-size: 1em;
+  color: darkgray;
+}
+
 .label {
   color: white;
   line-height: 180%;
@@ -44,7 +66,7 @@ img {
   background: -moz-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
   background: linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
   max-width: 25em;
-  min-width: 15em;
+  min-width: 16em;
   border: 2px solid black;
   margin: auto;
   box-sizing: border-box;
@@ -68,27 +90,42 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
+/*
 .itemWhide:hover{
   background-color: rgba(211, 228, 15, 0.7);
 }
+*/
 
-.stratagems .shade {
+.stratagems > div {
   display: inline-block;
   margin: 1%;
   width: 23%;
   background: url("../svg/shade.svg");
   background-size: cover;
+  position: relative;
+  cursor: pointer;
 }
 
 .stratagems img {
-  border: 2px solid rgba(0,0,0,0.5);
   box-sizing: border-box;
   width: 100%;
+  top: 0;
 }
 
+img.shade {
+  position: relative;
+  border: 2px solid rgba(0,0,0,0.5);
+}
 
+img.strat {
+  position: absolute;
+  padding: 3px;
+}
+
+/*
 .stratagems img:hover {
   border: 3px solid rgba(211, 228, 15, 0.7);
 }
@@ -96,23 +133,41 @@ img {
 .randomizer:hover{
   background-color: rgba(211, 228, 15, 0.7);
 }
+*/
 
 .button {
   text-align: center;
   position: relative;
   font-size: 1.5em;
+  cursor: pointer;
+}
+
+select.dicemode {
+  margin: 0.5em;
+  width: inherit;
+  border: none;
+  background: rgba(120, 120, 120, 1);
+  color: white;
+  font-size: 0.9em;
+  line-height: 200%;
+  text-shadow: none;
+  padding: 0.2em;
+}
+
+.dicemode option {
+  background: rgba(150, 150, 150, 1);
 }
 
 .share {
-  display: flex;
 }
 
-.share p {
-  position: relative;
-}
 .share input {
-  margin: 1em;
-  width: 100%;
+  width: inherit;
+  border: none;
+  margin: 0.5em;
+  background: rgba(120, 120, 120, 1);
+  color: white;
+  padding: 0.2em;
 }
 
 ul.playerPicker {
@@ -120,7 +175,6 @@ ul.playerPicker {
   margin: 0;
   padding: 0;
   width: 100%;
-  /* display: flex; */
   display: none;
 }
 

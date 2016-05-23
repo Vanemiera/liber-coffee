@@ -7,7 +7,7 @@
   <title>Liber-Coffee</title>
   <link rel="stylesheet" href="css/app.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="favicon.png">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body ng-controller="LoadoutCtrl">
@@ -18,6 +18,9 @@
       <li class="playerIcon player3"><img src="svg/SH-20.svg" alt=""/></li>
       <li class="playerIcon player4"><img src="svg/SH-20.svg" alt=""/></li>
     </ul><!-->
+    <img class="topicon" src="svg/header.svg" alt="Liber-Coffee"/>
+    <p class="gothic title">  Liber-Coffee  </p>
+    <p class="gothic subtitle">Helldivers loudout randomizer</p>
     <p class="gothic">PERKS</p>
     <div class="itemWhide">
       <img class="itemPic" ng-click="rollPerk()" ng-src="svg/{{perk.img}}.svg"/>
@@ -30,17 +33,28 @@
     </div>
     <p class="gothic">STRATAGEMS</p>
     <div class="stratagems">
-      <div class="shade" ng-repeat="stratagem in stratagems"
-           ng-style="{'background-color':'rgb('+stratagems[$index].color+')'}">
-        <img ng-click="rollStratagem($index)"
-             ng-src="svg/{{stratagems[$index].img}}.svg">
+      <div ng-repeat="stratagem in stratagems">
+        <img class="shade"
+             ng-style="{'background-color':'rgb('+stratagems[$index].color+')'}"
+             src="svg/shade.svg"/>
+        <img class="strat"
+             ng-click="rollStratagem($index)"
+             ng-src="svg/{{stratagems[$index].img}}.svg"/>
       </div>
     </div>
     <div class="randomizer"  ng-click="rollEverything()">
-        <p class="gothic label button">RANDOMIZE</p>
+        <p class="gothic label button">RANDOMIZE!</p>
     </div>
+    <p class="gothic">Dice Mode</p>
+    <div>
+      <select class="dicemode gothic"
+              ng-model="dicemode"
+              ng-options="option.label for option in diceoptions track by option.id">
+
+      </select>
+    </div>
+    <p class="gothic">Share</p>
     <div class="share">
-      <p class="gothic label">Share:</p>
       <input ng-model="url" onclick="this.select();" ng-blur="calcHash()">
     </div>
   </div>
