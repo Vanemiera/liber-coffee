@@ -3,89 +3,102 @@
 angular.module('liber-coffee', ['arsenal', 'hash64'])
 .controller('LoadoutCtrl', function($scope, $location, arsenal, hash64){
 
-  $scope.calcHash = function() {
-    $scope.hash = '#/' + hash64.intsToB64Url([
-      $scope.perk.id,
-      $scope.primary.id,
-      $scope.stratagems[0].id,
-      $scope.stratagems[1].id,
-      $scope.stratagems[2].id,
-      $scope.stratagems[3].id
-    ]);
-    $scope.url = location.host + location.pathname + $scope.hash;
-  };
-
-  if (hash64.hashes) {
-    var ids = hash64.b64UrlToInts(hash64.hashes[0]);
-    $scope.perk = arsenal.getPerk(ids[0]);
-    $scope.primary = arsenal.getPrimary(ids[1]);
-    $scope.stratagems = [
-      arsenal.getStratagem(ids[2], 0),
-      arsenal.getStratagem(ids[3], 1),
-      arsenal.getStratagem(ids[4], 2),
-      arsenal.getStratagem(ids[5], 3)
-    ];
-    $scope.url = location.host + location.pathname + location.hash;
-  } else {
-    $scope.perk = arsenal.getRandomPerk();
-    $scope.primary = arsenal.getRandomPrimary();
-    $scope.stratagems = [
-      arsenal.getRandomStratagem(0),
-      arsenal.getRandomStratagem(1),
-      arsenal.getRandomStratagem(2),
-      arsenal.getRandomStratagem(3)
-    ];
-    $scope.calcHash();
-  }
+  $scope.loadout = {stratagems: []};
+  $scope.initDone = false;
 
   $scope.diceoptions = [
     {
       id: 1,
       label: "Nice dice - Favourable weighting",
+      type: "weighting",
+      weighting: "nice"
     },
     {
       id: 2,
       label: "Normal dice - Unweighted",
+      type: "weighting"
     },
     {
       id: 3,
       label: "Helldice - Punishing weighting",
+      type: "weighting",
+      weighting: "hell"
     },
     {
       id: 4,
       label: "Community favourites",
+      type: "pool",
+      pool: "favourites"
     },
     {
       id: 5,
       label: "Community punishments",
+      type: "pool",
+      pool: "punishments"
     }
   ];
-  $scope.dicemode = $scope.diceoptions[0]
+  $scope.dicemode = $scope.diceoptions[0];
+
+  $scope.calcHash = function() {
+    if ($scope.loadout.id) {
+      $scope.url = "http://" + location.host + location.pathname + '#/~' + $scope.loadout.id;
+    } else {
+      var hash = '#/' + hash64.intsToB64Url([
+        $scope.loadout.perk.id,
+        $scope.loadout.primary.id,
+        $scope.loadout.stratagems[0].id,
+        $scope.loadout.stratagems[1].id,
+        $scope.loadout.stratagems[2].id,
+        $scope.loadout.stratagems[3].id
+      ]);
+      $scope.url = "http://" + location.host + location.pathname + hash;
+    }
+  };
 
   $scope.rollPerk = function() {
-    $scope.perk = arsenal.getRandomPerk();
-    $scope.calcHash();
+    $scope.loadout.perk = arsenal.getRandomPerk($scope.dicemode.weighting);
+    if ($scope.initDone) {$scope.calcHash();}
+    $scope.loadout.id = null;
   };
 
   $scope.rollPrimary = function() {
-    $scope.primary = arsenal.getRandomPrimary();
-    $scope.calcHash();
+    $scope.loadout.primary = arsenal.getRandomPrimary($scope.dicemode.weighting);
+    if ($scope.initDone) {$scope.calcHash();}
+    $scope.loadout.id = null;
   };
 
   $scope.rollStratagem = function(index) {
-    $scope.stratagems[index] = arsenal.getRandomStratagem(index);
-    $scope.calcHash();
+    $scope.loadout.stratagems[index] = arsenal.getRandomStratagem(index, $scope.dicemode.weighting);
+    if ($scope.initDone) {$scope.calcHash();}
+    $scope.loadout.id = null;
   };
   $scope.rollallStratagems = function() {
-    for(var i=0; i < $scope.stratagems.length; i++) {
-      $scope.stratagems[i] = arsenal.getRandomStratagem(i);
+    for(var i=0; i<4; i++) {
+      $scope.loadout.stratagems[i] = arsenal.getRandomStratagem(i, $scope.dicemode.weighting);
     }
-    $scope.calcHash();
+    if ($scope.initDone) {$scope.calcHash();}
+    $scope.loadout.id = null;
   };
 
   $scope.rollEverything = function() {
-    $scope.rollPerk();
-    $scope.rollPrimary();
-    $scope.rollallStratagems();
+    if ($scope.dicemode.type === "weighting") {
+      $scope.rollPerk();
+      $scope.rollPrimary();
+      $scope.rollallStratagems();
+    } else if ($scope.dicemode.type === "pool") {
+      $scope.loadout = arsenal.getRandomLoadout($scope.dicemode.pool)
+      $scope.calcHash();
+    }
+    return;
   };
+
+  if (hash64.hashes) {
+    $scope.loadout = arsenal.getLoadout(hash64.hashes[0])
+    $scope.initDone = true;
+    $scope.url = location.host + location.pathname + location.hash;
+  } else {
+    $scope.rollEverything();
+    $scope.initDone = true;
+    $scope.calcHash();
+  }
 });

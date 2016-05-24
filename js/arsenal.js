@@ -1,153 +1,223 @@
-angular.module('arsenal', [])
-.factory('arsenal', function() {
+var testarsenal = {};
+
+angular.module('arsenal', ['hash64'])
+.factory('arsenal', function(hash64) {
   var arsenal = {};
   arsenal.perks = [
-    {
+    {//a
       name: "Laser Aim Module",
-      img: "Laser_Aim_Module"
+      img: "Laser_Aim_Module",
+      weights: {
+        hell: 0.5
+      }
     },
-    {
+    {//b
       name: "MD-99 AutoInjector",
-      img: "MD-99"
+      img: "MD-99",
+      weights: {
+        hell: 0.5
+      }
     },
-    {
+    {//c
       name: "Cardio Accelerator",
       img: "Cardio_Accelerator"
     },
-    {
+    {//d
       name: "Heavy Armor",
       img: "Heavy_Armor"
     },
-    {
+    {//e
       name: "Incendiary Grenades",
-      img: "Incendiary_Grenades"
+      img: "Incendiary_Grenades",
+      weights: {
+        hell: 3
+      }
     },
-    {
+    {//f
       name: "Stun Grenades",
-      img: "Stun_Grenades"
+      img: "Stun_Grenades",
+      weights: {
+        hell: 3
+      }
     },
-    {
+    {//g
       name: "Smoke Grenades",
-      img: "Smoke_Grenades"
+      img: "Smoke_Grenades",
+      weights: {
+        hell: 3
+      }
     },
-    {
+    {//h
       name: "Stratagem Priority",
-      img: "Stratagem_Priority"
+      img: "Stratagem_Priority",
+      weights: {
+        nice: 5,
+        hell: 0.5
+      }
     },
-    {
+    {//i
       name: "Displacement Field",
-      img: "Displacement_Field"
+      img: "Displacement_Field",
+      weights: {
+        nice: 5,
+        hell: 0.5
+      }
     },
-    {
+    {//j
       name: "Strong Arm",
-      img: "Strong_Arm"
+      img: "Strong_Arm",
+      weights: {
+        hell: 2
+      }
     },
-    {
+    {//k
       name: "P-6 'Gunslinger'",
-      img: "P-6"
+      img: "P-6",
+      weights: {
+        hell: 3
+      }
     },
-    {
+    {//l
       name: "FLAM-24 'Pyro'",
-      img: "FLAM-24"
+      img: "FLAM-24",
+      weights: {
+        hell: 3
+      }
     },
-    {
+    {//m
       name: "PLAS-3 'Singe'",
-      img: "PLAS-3"
+      img: "PLAS-3",
+      weights: {
+        hell: 3
+      }
     },
-    {
+    {//n
       name: "All Terrain Boots",
       img: "All_Terrain_Boots"
     },
-    {
+    {//o
       name: "Precision Call-In",
       img: "Precision_Call-In"
     }
   ];
 
   arsenal.primaries = [
-    {
+    {//a
       name: "AR-19 'Liberator'",
       img: "AR-19"
     },
-    {
+    {//b
       name: "AR-20L 'Justice'",
-      img: "AR-20L"
+      img: "AR-20L",
+      weights: {
+        nice: 5
+      }
     },
-    {
+    {//c
       name: "AR-22C 'Patriot'",
       img: "AR-22C"
     },
-    {
+    {//d
       name: "SG-225 'Breaker'",
-      img: "SG-225"
+      img: "SG-225",
+      weights: {
+        nice: 5
+      }
     },
-    {
+    {//e
       name: "SG-8 'Punisher'",
-      img: "SG-8"
+      img: "SG-8",
+      weights: {
+        nice: 0.5,
+        hell: 8
+      }
     },
-    {
+    {//f
       name: "DBS-2 'Double Freedom'",
-      img: "DBS-2"
+      img: "DBS-2",
+      weights: {
+        nice: 5
+      }
     },
-    {
+    {//g
       name: "SMG-45 'Defender'",
       img: "SMG-45"
     },
-    {
+    {//h
       name: "MP-98 'Knight'",
       img: "MP-98"
     },
-    {
+    {//i
       name: "RX-1 Rail Gun",
-      img: "RX-1"
+      img: "RX-1",
+      weights: {
+        nice: 0.5
+      }
     },
-    {
+    {//j
       name: "LAS-5 'Scythe'",
       img: "LAS-5"
     },
-    {
+    {//k
       name: "LAS-13 'Trident'",
-      img: "LAS-13"
+      img: "LAS-13",
+      weights: {
+        nice: 5
+      }
     },
-    {
+    {//l
       name: "AC-3 Arc Thrower",
-      img: "AC-3"
+      img: "AC-3",
+      weights: {
+        nice: 0.5,
+        hell: 5
+      }
     },
-    {
+    {//m
       name: "MG-105 'Stalwart'",
       img: "MG-105"
     },
-    {
+    {//n
       name: "SMG-34 'Ninja'",
       img: "SMG-34"
     },
-    {
+    {//o
       name: "LHO-63 'Camper'",
-      img: "LHO-63"
+      img: "LHO-63",
+      weights: {
+        nice: 0.5
+      }
     },
-    {
+    {//p
       name: "AR-14D 'Paragon'",
       img: "AR-14D"
     },
-    {
+    {//q
       name: "CR-9 'Supressor'",
       img: "CR-9"
     },
-    {
+    {//r
       name: "PLAS-1 'Scorcher'",
       img: "PLAS-1"
     },
-    {
+    {//s
       name: "LAS-16 'Sickle'",
-      img: "LAS-16"
+      img: "LAS-16",
+      weights: {
+        nice: 5
+      }
     },
-    {
+    {//t
       name: "LAS-12 'Tanto'",
       img: "LAS-12"
     },
-    {
+    {//u
       name: "AC-5 Arc Shotgun",
-      img: "AC-5"
+      img: "AC-5",
+      weights: {
+        nice: 0.5,
+        hell: 4
+      }
     }
   ];
 
@@ -156,275 +226,445 @@ angular.module('arsenal', [])
   arsenal.BGCOLOR_OFFENSIVE = "139, 91, 81";
 
   arsenal.stratagems = [
-    {
+    {//a
       name: "Resupply",
       img: "Resupply",
-      color: arsenal.BGCOLOR_SUPPLY
+      color: arsenal.BGCOLOR_SUPPLY,
+      weights: {
+        nice: 10
+      }
     },
-    {
+    {//b
       name: "MG-94 Machine Gun",
       img: "MG-94",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//c
       name: "LAS-98 Laser Cannon",
       img: "LAS-98",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//d
       name: "AC-22 'Dum-Dum'",
       img: "AC-22",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//e
       name: "'Obliterator' Grenade Launcher",
       img: "Obliterator",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//f
       name: "M-25 'Rumbler'",
       img: "M-25",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//g
       name: "FLAM-40 'Incinerator'",
       img: "FLAM-40",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//h
       name: "TOX-13 'Avenger'",
       img: "TOX-13",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//i
       name: "RL-112 Recoilless Rifle",
       img: "RL-112",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//j
       name: "EAT-17",
       img: "EAT-17",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//k
       name: "MLS-4X 'Commando'",
       img: "MLS-4X",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//l
       name: "AD-334 'Guard Dog'",
       img: "AD-334",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//m
       name: "AD-289 'Angel'",
       img: "AD-289",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//n
       name: "Resupply Pack",
       img: "Resupply_Pack",
-      color: arsenal.BGCOLOR_SUPPLY
+      color: arsenal.BGCOLOR_SUPPLY,
+      weights: {
+        nice: 5
+      }
     },
-    {
+    {//o
       name: "LIFT-850 Jump Pack",
       img: "LIFT-850",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//p
       name: "SH-32 Directional Kinetic Shield",
       img: "SH-32",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//q
       name: "SH-20 Shield Generator Pack",
       img: "SH-20",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//r
       name: "REP-80",
       img: "REP-80",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//s
       name: "REC-6 'Demolisher'",
       img: "REC-6",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//t
       name: "EXO-44 'Stomper' Exosuit",
       img: "EXO-44",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//u
       name: "EXO-48 'Obsidian' Exosuit",
       img: "EXO-48",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//v
       name: "EXO-51 'Lumberer' Exosuit",
       img: "EXO-51",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//w
       name: "MC-109 'Hammer' Motorcycle",
       img: "MC-109",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//x
       name: "TD-110 'Bastion'",
       img: "TD-110",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//y
       name: "M5 APC",
       img: "M5",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//z
       name: "M5-32 HAV",
       img: "M5-32",
       color: arsenal.BGCOLOR_SUPPLY
     },
-    {
+    {//A
       name: "'Humblebee' UAV drone",
       img: "UAV",
       color: arsenal.BGCOLOR_DEFENSIVE
     },
-    {
+    {//B
       name: "Distractor Beacon",
       img: "Distractor_Beacon",
       color: arsenal.BGCOLOR_DEFENSIVE
     },
-    {
+    {//C
       name: "AT-47 Anti-Tank Emplacement",
       img: "AT-47",
       color: arsenal.BGCOLOR_DEFENSIVE
     },
-    {
+    {//D
       name: "A/MG-II Minigun Turret",
       img: "MG-II",
       color: arsenal.BGCOLOR_DEFENSIVE
     },
-    {
+    {//E
       name: "A/RX-34 Railcannon Turret",
       img: "RX-34",
       color: arsenal.BGCOLOR_DEFENSIVE
     },
-    {
+    {//F
       name: "A/AC-6 Tesla Tower",
       img: "AC-6",
       color: arsenal.BGCOLOR_DEFENSIVE
     },
-    {
+    {//G
       name: "Airdropped Mines",
       img: "Airdropped_Mines",
       color: arsenal.BGCOLOR_DEFENSIVE
     },
-    {
+    {//H
       name: "Anti-Personnel Barrier",
       img: "Anti-Personnel_Barrier",
       color: arsenal.BGCOLOR_DEFENSIVE
     },
-    {
+    {//I
       name: "Airdropped Stun Mines",
       img: "Airdropped_Stun_Mines",
       color: arsenal.BGCOLOR_DEFENSIVE
     },
-    {
+    {//J
       name: "Static Field Conductors",
       img: "Static_Field_Conductors",
-      color: arsenal.BGCOLOR_OFFENSIVE
+      color: arsenal.BGCOLOR_OFFENSIVE,
+      weights: {
+        nice: 5
+      }
     },
-    {
+    {//K
       name: "Airstrike",
       img: "Airstrike",
-      color: arsenal.BGCOLOR_OFFENSIVE
+      color: arsenal.BGCOLOR_OFFENSIVE,
+      weights: {
+        nice: 2
+      }
     },
-    {
+    {//L
       name: "'Vindicator' Dive Bomb",
       img: "Vindicator",
-      color: arsenal.BGCOLOR_OFFENSIVE
+      color: arsenal.BGCOLOR_OFFENSIVE,
+      weights: {
+        nice: 5
+      }
     },
-    {
+    {//M
       name: "Strafing Run",
       img: "Strafing_Run",
       color: arsenal.BGCOLOR_OFFENSIVE
     },
-    {
+    {//N
       name: "Close Air Support",
       img: "Close_Air_Support",
       color: arsenal.BGCOLOR_OFFENSIVE
     },
-    {
+    {//O
       name: "Incendiary Bombs",
       img: "Incendiary_Bombs",
-      color: arsenal.BGCOLOR_OFFENSIVE
+      color: arsenal.BGCOLOR_OFFENSIVE,
+      weights: {
+        nice: 3
+      }
     },
-    {
+    {//P
       name: "Missile Barrage",
       img: "Missile_Barrage",
-      color: arsenal.BGCOLOR_OFFENSIVE
+      color: arsenal.BGCOLOR_OFFENSIVE,
+      weights: {
+        nice: 0.5
+      }
     },
-    {
+    {//Q
       name: "Thunderer Barrage",
       img: "Thunderer_Barrage",
-      color: arsenal.BGCOLOR_OFFENSIVE
+      color: arsenal.BGCOLOR_OFFENSIVE,
+      weights: {
+        nice: 0.5
+      }
     },
-    {
+    {//R
       name: "Orbital Laser Strike",
       img: "Orbital_Laser_Strike",
-      color: arsenal.BGCOLOR_OFFENSIVE
+      color: arsenal.BGCOLOR_OFFENSIVE,
+      weights: {
+        nice: 0.5
+      }
     },
-    {
+    {//S
       name: "'Shredder' Missile Strike",
       img: "Shredder",
-      color: arsenal.BGCOLOR_OFFENSIVE
+      color: arsenal.BGCOLOR_OFFENSIVE,
+      weights: {
+        nice: 0.5
+      }
     },
-    {
+    {//T
       name: "Railcannon Strike",
       img: "Railcannon_Strike",
-      color: arsenal.BGCOLOR_OFFENSIVE
+      color: arsenal.BGCOLOR_OFFENSIVE,
+      weights: {
+        nice: 5
+      }
     }
   ];
 
-  arsenal.getRandomPerk = function() {
-    var id = Math.floor(Math.random()*this.perks.length);
-    var rndPerk = this.perks[id];
-    var newPerk = {name:rndPerk.name, img:rndPerk.img, id:id};
+  arsenal.loadouts = {
+    favourites: [
+      {
+        name: "Bug and Borg basher",
+        author: "Vanemiera",
+        description: "My go-to loadout for Bugs and Cyborgs.",
+        hash: "icnfJJ",
+        id: "vanf1"
+      },
+      {
+        name: "Squid basher",
+        author: "Vanemiera",
+        description: "My go-to loadout for Illuminates.",
+        hash: "ifaeoO",
+        id: "vanf2"
+      },
+      {
+        name: "Throw n' blow",
+        author: "Vanemiera",
+        description: "Fun with explosives.",
+        hash: "jtssLL",
+        id: "vanf3"
+      },
+    ],
+    punishments: [
+      {
+        name: "Element of Supplies",
+        author: "Vanemiera",
+        description: "Presents! :3",
+        hash: "hiaaaa",
+        id: "vanp1"
+      },
+      {
+        name: "Ambient light",
+        author: "Vanemiera",
+        description: "Fix: Screen too dark",
+        hash: "hlSSSS",
+        id: "vanp2"
+      },
+    ]
+  };
+
+  arsenal.weightingSumsPerks = {};
+  arsenal.weightingSumsPrimaries = {};
+  arsenal.weightingSumsStratagems = {};
+
+  var calcweightingSums = function(weightingSumsList, itemList) {
+    for (var i=0; i<itemList.length; i++) {
+      var currentItem = itemList[i];
+      //add item weight to respective total
+      for(var k in weightingSumsList) {
+        if (currentItem.weights && currentItem.weights[k]) {
+          weightingSumsList[k] += currentItem.weights[k];
+        } else {
+          weightingSumsList[k] += 1;
+        }
+      }
+      //add weighting to list of first encountered
+      if(!currentItem.weights) {continue;}
+      for(var k in currentItem.weights) {
+        if (!weightingSumsList[k]) {
+          weightingSumsList[k] =  i + currentItem.weights[k];
+        }
+      }
+    }
+  };
+
+  calcweightingSums(arsenal.weightingSumsPerks, arsenal.perks);
+  calcweightingSums(arsenal.weightingSumsPrimaries, arsenal.primaries);
+  calcweightingSums(arsenal.weightingSumsStratagems, arsenal.stratagems);
+
+  var getRandomWeighted = function(weighting, weightingSumsList, itemList) {
+    var result = {};
+    if (weightingSumsList[weighting]) {
+      var targetWeight = Math.random()*weightingSumsList[weighting];
+      var iteratedWeight = 0;
+      for (var i=0; i<itemList.length; i++) {
+        var currentWeight = (itemList[i].weights && itemList[i].weights[weighting]) || 1;
+        if (targetWeight<=iteratedWeight+currentWeight) {
+          result.id = i;
+          result.item = itemList[i];
+          return result;
+        } else {
+          iteratedWeight += currentWeight;
+        }
+      }
+    } else {
+      result.id = Math.floor(Math.random()*itemList.length);
+      result.item = itemList[result.id];
+    }
+    return result;
+  };
+
+  arsenal.getRandomPerk = function(weighting) {
+    var rndPerk = getRandomWeighted(weighting, arsenal.weightingSumsPerks, arsenal.perks);
+    var newPerk = {name:rndPerk.item.name, img:rndPerk.item.img, id:rndPerk.id};
     return newPerk;
   };
 
   arsenal.getPerk = function(id) {
     var rndPerk = this.perks[id];
-    var newPerk = {name:rndPerk.name, img:rndPerk.img, id:id};
-    return newPerk;
+    if (rndPerk) {
+      var newPerk = {name:rndPerk.name, img:rndPerk.img, id:id};
+      return newPerk;
+    } else {
+      return this.getRandomPerk();
+    }
   };
 
-  arsenal.getRandomPrimary = function() {
-    var id = Math.floor(Math.random()*this.primaries.length);
-    var rndPrimary = this.primaries[id];
-    var newPrimary = {name:rndPrimary.name, img:rndPrimary.img, id:id};
+  arsenal.getRandomPrimary = function(weighting) {
+    var rndPrimary = getRandomWeighted(weighting, arsenal.weightingSumsPrimaries, arsenal.primaries);
+    var newPrimary = {name:rndPrimary.item.name, img:rndPrimary.item.img, id:rndPrimary.id};
     return newPrimary;
   };
 
   arsenal.getPrimary = function(id) {
     var rndPrimary = this.primaries[id];
-    var newPrimary = {name:rndPrimary.name, img:rndPrimary.img, id:id};
-    return newPrimary;
+    if (rndPrimary) {
+      var newPrimary = {name:rndPrimary.name, img:rndPrimary.img, id:id};
+      return newPrimary;
+    } else {
+      return this.getRandomPrimary();
+    }
   };
 
-  arsenal.getRandomStratagem = function(slot) {
-    var id = Math.floor(Math.random()* this.stratagems.length);
-    var rndStrat =  this.stratagems[id];
-    var newStrat = {slot:slot, name:rndStrat.name, img:rndStrat.img, color:rndStrat.color, id:id};
+  arsenal.getRandomStratagem = function(slot, weighting) {
+    var rndStrat = getRandomWeighted(weighting, arsenal.weightingSumsStratagems, arsenal.stratagems);
+    var newStrat = {slot:slot, name:rndStrat.item.name, img:rndStrat.item.img, color:rndStrat.item.color, id:rndStrat.id};
     return newStrat;
   };
 
   arsenal.getStratagem = function(id, slot) {
     var rndStrat =  this.stratagems[id];
-    var newStrat = {slot:slot, name:rndStrat.name, img:rndStrat.img, color:rndStrat.color, id:id};
-    return newStrat;
+    if (rndStrat) {
+      var newStrat = {slot:slot, name:rndStrat.name, img:rndStrat.img, color:rndStrat.color, id:id};
+      return newStrat;
+    } else {
+      return this.getRandomStratagem(slot);
+    }
   };
+
+  arsenal.getLoadout = function(hash) {
+    var newLoadout = {stratagems: []};
+    if (hash.startsWith('~')) {
+      for (var k in this.loadouts) {
+        for (var i=0; i<this.loadouts[k].length; i++) {
+          if (this.loadouts[k][i].id === hash.substring(1)) {
+            newLoadout = this.getLoadout(this.loadouts[k][i].hash);
+            newLoadout.id = this.loadouts[k][i].id;
+            return newLoadout;
+          }
+        }
+      }
+    } else {
+      var ids = hash64.b64UrlToInts(hash);
+      newLoadout.perk = arsenal.getPerk(ids[0]);
+      newLoadout.primary = arsenal.getPrimary(ids[1]);
+      newLoadout.stratagems = [
+        arsenal.getStratagem(ids[2], 0),
+        arsenal.getStratagem(ids[3], 1),
+        arsenal.getStratagem(ids[4], 2),
+        arsenal.getStratagem(ids[5], 3)
+      ];
+    }
+    return newLoadout;
+  };
+
+    arsenal.getRandomLoadout = function(pool) {
+    var id = Math.floor(Math.random()* this.loadouts[pool].length);
+    var rndLoadout = this.getLoadout(this.loadouts[pool][id].hash);
+    rndLoadout.id = this.loadouts[pool][id].id;
+    return rndLoadout;
+  };
+
+  testarsenal = arsenal;
   return arsenal;
 });

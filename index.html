@@ -23,23 +23,23 @@
     <p class="gothic subtitle">Helldivers loudout randomizer</p>
     <p class="gothic">PERKS</p>
     <div class="itemWhide">
-      <img class="itemPic" ng-click="rollPerk()" ng-src="svg/{{perk.img}}.svg"/>
-      <p class="gothic label" ng-bind-template="{{perk.name}}"></p>
+      <img class="itemPic" ng-click="rollPerk()" ng-src="svg/{{loadout.perk.img}}.svg"/>
+      <p class="gothic label" ng-bind-template="{{loadout.perk.name}}"></p>
     </div>
     <p class="gothic">PRIMARY WEAPON</p>
     <div class="itemWhide">
-      <img class="itemPic" ng-click="rollPrimary()" ng-src="svg/{{primary.img}}.svg"/>
-        <p class="gothic label" ng-bind-template="{{primary.name}}"></p>
+      <img class="itemPic" ng-click="rollPrimary()" ng-src="svg/{{loadout.primary.img}}.svg"/>
+        <p class="gothic label" ng-bind-template="{{loadout.primary.name}}"></p>
     </div>
     <p class="gothic">STRATAGEMS</p>
     <div class="stratagems">
-      <div ng-repeat="stratagem in stratagems">
+      <div ng-repeat="stratagem in loadout.stratagems">
         <img class="shade"
-             ng-style="{'background-color':'rgb('+stratagems[$index].color+')'}"
+             ng-style="{'background-color':'rgb('+loadout.stratagems[$index].color+')'}"
              src="svg/shade.svg"/>
         <img class="strat"
              ng-click="rollStratagem($index)"
-             ng-src="svg/{{stratagems[$index].img}}.svg"/>
+             ng-src="svg/{{loadout.stratagems[$index].img}}.svg"/>
       </div>
     </div>
     <div class="randomizer"  ng-click="rollEverything()">

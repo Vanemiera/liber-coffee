@@ -21,8 +21,10 @@ angular.module('hash64',[])
   };
 
   var parseHash = function(hash) {
-    if (hash.match(/^(#\/)?([\w-]{6},?){1}$/g)) {
+    if (hash.match(/^(#\/)?([\w-]{6})$/g)) {
       return hash.match(/[\w-]{6}/g);
+    } else if (hash.match(/^(#\/)?(~[\w-]{5})$/g)) {
+      return hash.match(/~[\w-]{5}/g);
     } else {
       return;
     }
