@@ -12,6 +12,7 @@ body {
 
 img {
   vertical-align: bottom;
+  display: block;
 }
 
 
@@ -122,9 +123,9 @@ p.legal {
 }
 
 .stratagems img {
-  box-sizing: border-box;
   width: 100%;
   top: 0;
+  box-sizing: border-box;
 }
 
 img.shade {
