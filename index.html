@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body ng-controller="LoadoutCtrl">
+  <div class="site">
   <div class="player">
     <!--><ul class="playerPicker">
       <li class="playerIcon player1"><img src="svg/SH-20.svg" alt=""/></li>
@@ -20,7 +21,7 @@
     </ul><!-->
     <img class="topicon" src="svg/header.svg" alt="Liber-Coffee"/>
     <p class="gothic title">  Liber-Coffee  </p>
-    <p class="gothic subtitle">Helldivers loudout randomizer</p>
+    <p class="gothic subtitle">Helldivers loadout randomizer</p>
     <p class="gothic">PERKS</p>
     <div class="itemWhide">
       <img class="itemPic" ng-click="rollPerk()" ng-src="svg/{{loadout.perk.img}}.svg"/>
@@ -58,7 +59,8 @@
       <input ng-model="url" onclick="this.select();" ng-blur="calcHash()">
     </div>
   </div>
-
+  <p class="legal">© Philipp Westermann, 2016. All Rights Reserved</p>
+  </div>
   <script src="js/angular.js"></script>
   <script src="js/arsenal.js"></script>
   <script src="js/hash64.js"></script>

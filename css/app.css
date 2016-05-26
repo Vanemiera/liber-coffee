@@ -14,6 +14,8 @@ img {
   vertical-align: bottom;
 }
 
+
+
 .gothic {
   font-family: handelGothic;
   font-size: 1.15em;
@@ -59,16 +61,26 @@ img.topicon {
   top: 0;
 }
 
+.site {
+  max-width: 25em;
+  min-width: 16em;
+  color: white;
+  margin: auto;
+}
+
+p.legal {
+  font-size: 0.7em;
+  text-align: center;
+  text-shadow: 1px 1px 0px black;
+}
+
 .player {
   background: rgba(50, 50, 50, 0.8); /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
   background: -o-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
   background: -moz-linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
   background: linear-gradient(rgba(50, 50, 50, 0.9), rgba(50, 50, 50, 0.7));
-  max-width: 25em;
-  min-width: 16em;
   border: 2px solid black;
-  margin: auto;
   box-sizing: border-box;
 }
 
@@ -152,6 +164,7 @@ select.dicemode {
   line-height: 200%;
   text-shadow: none;
   padding: 0.2em;
+  cursor: pointer;
 }
 
 .dicemode option {

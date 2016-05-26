@@ -57,27 +57,27 @@ angular.module('liber-coffee', ['arsenal', 'hash64'])
 
   $scope.rollPerk = function() {
     $scope.loadout.perk = arsenal.getRandomPerk($scope.dicemode.weighting);
-    if ($scope.initDone) {$scope.calcHash();}
     $scope.loadout.id = null;
+    if ($scope.initDone) {$scope.calcHash();}
   };
 
   $scope.rollPrimary = function() {
     $scope.loadout.primary = arsenal.getRandomPrimary($scope.dicemode.weighting);
-    if ($scope.initDone) {$scope.calcHash();}
     $scope.loadout.id = null;
+    if ($scope.initDone) {$scope.calcHash();}
   };
 
   $scope.rollStratagem = function(index) {
     $scope.loadout.stratagems[index] = arsenal.getRandomStratagem(index, $scope.dicemode.weighting);
-    if ($scope.initDone) {$scope.calcHash();}
     $scope.loadout.id = null;
+    if ($scope.initDone) {$scope.calcHash();}
   };
   $scope.rollallStratagems = function() {
     for(var i=0; i<4; i++) {
       $scope.loadout.stratagems[i] = arsenal.getRandomStratagem(i, $scope.dicemode.weighting);
     }
-    if ($scope.initDone) {$scope.calcHash();}
     $scope.loadout.id = null;
+    if ($scope.initDone) {$scope.calcHash();}
   };
 
   $scope.rollEverything = function() {
