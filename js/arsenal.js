@@ -514,6 +514,34 @@ angular.module('arsenal', ['hash64'])
         hash: "jtssLL",
         id: "vanf3"
       },
+      {
+        name: "Stun & Run",
+        author: "wilier",
+        description: "A humane approach to spreading democracy",
+        hash: "fglaIL",
+        id: "redw1"
+      },
+      {
+        name: "Pyro Maniacs",
+        author: "wilier",
+        description: "Fire, fire and more fire!!! A burning desire to spread democracy",
+        hash: "efgOau",
+        id: "redw2"
+      },
+      {
+        name: "Shock & Awe",
+        author: "wilier",
+        description: "Arc weapons and a lot of electricity!",
+        hash: "iupJFF",
+        id: "redw3"
+      },
+      {
+        name: "Toxic Pest Control",
+        author: "wilier",
+        description: "Chemical warfare!",
+        hash: "ipPhfa",
+        id: "redw4"
+      },
     ],
     punishments: [
       {
