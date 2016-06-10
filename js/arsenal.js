@@ -488,6 +488,14 @@ angular.module('arsenal', ['hash64'])
       weights: {
         nice: 5
       }
+    },
+    {//U
+      name: "'Sledge' Precision Artillery",
+      img: "Sledge_Precision_Artillery",
+      color: arsenal.BGCOLOR_OFFENSIVE,
+      weights: {
+        nice: 5
+      }
     }
   ];
 
@@ -541,6 +549,70 @@ angular.module('arsenal', ['hash64'])
         description: "Chemical warfare!",
         hash: "ipPhfa",
         id: "redw4"
+      },///////////////////////
+      {
+        name: "Smoke on the Slaughter",
+        author: "TheLethalDiva",
+        description: "For those that don't know a smoke grenade gives you just"+
+                     " enough time for a safe reload of your prone reload"+
+                     " weapon, in this case the commando. Plus you can use"+
+                     " smokes to keep tanks out of the fight, escape much like"+
+                     " throwing a static field behind you, to complete"+
+                     " objectives, and relax in safety while your next ammo"+
+                     " drop is coming down. Ammo drops can also be dropped on"+
+                     " tanks if need be. So many uses for smoke grenades so"+
+                     " this loadout focuses on throwing as many as possible"+
+                     " while going nuts with commando....which is ideal for"+
+                     " using with smoke grenades, since you don't really need"+
+                     " to see or even have a clear line of fire to be able to"+
+                     " see to hit the enemies. So many uses for smoke grenades"+
+                     " and so this loadout focuses on taking advantage of"+
+                     " that, while going trigger happy with Paragon and Commando.",
+        hash: "gpkaaa",
+        id: "Diva1"
+      },
+      {
+        name: "Muzzle Tov Machine Gun Fun No Refund Loadout",
+        author: "TheLethalDiva",
+        description: "Works for me....\n\n"+
+                     "Running Stalwart with the Machine gun secondary might"+
+                     " seem redundant, but that allows you the ability to"+
+                     " switch weapons without having to reload during long"+
+                     " skirmishes and control the enemy from across the screen."+
+                     " Eats give you plenty of anti-tank at each stop and also"+
+                     " the ability to pass the machine gun back and forth to"+
+                     " other team members if neccesary.",
+        hash: "bmaqbj",
+        id: "Diva2"
+      },
+      {
+        name: "Firefly",
+        author: "TheLethalDiva",
+        description: "Stun and Burn is the gateway to Serenity.",
+        hash: "bialgK",
+        id: "Diva3"
+      },
+      {
+        name: "Hidden Hokugage",
+        author: "TheLethalDiva",
+        description: "Ninja is one of the coolest primaries in the game and"+
+                     " the sledge complements it well. Its all about mobility,"+
+                     " which the Ninja (like all the SMGs) excels at. Believe It!",
+        hash: "hnaUUU",
+        id: "Diva4"
+      },
+      {
+        name: "Punisher War Journal",
+        author: "TheLethalDiva",
+        description: "Angel really complements Heavy Armor. Flamethrower"+
+                     " complements the Punisher as you can sweep the field"+
+                     " with flames and then pick off enemies with sniper"+
+                     " shots. Strafing Run is here because its an Illuminate"+
+                     " loadout, but even against bugs and cyborgs, strafing"+
+                     " run really comes in handy for handling Brood Commanders"+
+                     " and Butcher Packs.",
+        hash: "deamgM",
+        id: "Diva5"
       },
     ],
     punishments: [
