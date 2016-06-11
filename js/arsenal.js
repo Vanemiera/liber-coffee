@@ -582,7 +582,7 @@ angular.module('arsenal', ['hash64'])
                      " Eats give you plenty of anti-tank at each stop and also"+
                      " the ability to pass the machine gun back and forth to"+
                      " other team members if neccesary.",
-        hash: "bmaqbj",
+        hash: "bmapbj",
         id: "Diva2"
       },
       {
