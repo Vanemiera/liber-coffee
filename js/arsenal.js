@@ -3,6 +3,7 @@ var testarsenal = {};
 angular.module('arsenal', ['hash64'])
 .factory('arsenal', function(hash64) {
   var arsenal = {};
+  arsenal.hash = hash64;
   arsenal.perks = [
     {//a
       name: "Laser Aim Module",
@@ -745,7 +746,7 @@ angular.module('arsenal', ['hash64'])
         }
       }
     } else {
-      var ids = hash64.b64UrlToInts(hash);
+      var ids = this.hash.b64UrlToInts(hash);
       newLoadout.perk = arsenal.getPerk(ids[0]);
       newLoadout.primary = arsenal.getPrimary(ids[1]);
       newLoadout.stratagems = [
