@@ -23,7 +23,7 @@
   },
   "scripts": {
     "prestart": "npm install",
-    "start": "http-server -a localhost -p 8000 -c-1",
+    "start": "http-server -p 8000 -c-1",
 
     "copylibs": "util/copylibs",
 

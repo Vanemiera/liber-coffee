@@ -15,8 +15,6 @@ img {
   display: block;
 }
 
-
-
 .gothic {
   font-family: handelGothic;
   font-size: 1.15em;
@@ -222,4 +220,15 @@ ul.playerPicker {
   opacity: 0;
   width: 100%;
   display: block;
+}
+
+.test-console {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 20%;
+  bottom: 10px;
+  background: white;
+  border: 1px solid black;
+  overflow-y: scroll;
 }
