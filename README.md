@@ -18,7 +18,6 @@ If you want to contribute a loadout, I just need the following to put in:
 
 In the current state of developement, the Author, Name and Description fields aren't displayed yet. I want to re-work the UI in the near future to accomodate more options like filters and the ability to compile a loadout with a selection for each item for sharing. Along with those additions there will also be room for a decent description of the community loadouts.
 
-The "App" is designed to work on computer, smartphone, PS4 browser and the Vita browser. Though for some reason the community loadout dice modes don't seem to work on PS4 and Vita as of now. If you find any bugs or have ideas, please open an issue.
+The Liber-Coffee is designed to work on computer, smartphone, the PS4 browser and the Vita browser. If you find any bugs or have ideas, please open an issue.
 
 Happy helldiving!
-
