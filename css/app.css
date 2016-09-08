@@ -95,6 +95,7 @@ p.legal {
 
 .itemPic {
   width: 100%;
+  size: inherit;
 }
 
 .itemWhide {
@@ -231,4 +232,5 @@ ul.playerPicker {
   background: white;
   border: 1px solid black;
   overflow-y: scroll;
+  font-family: monospace;
 }

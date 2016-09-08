@@ -735,7 +735,7 @@ angular.module('arsenal', ['hash64'])
 
   arsenal.getLoadout = function(hash) {
     var newLoadout = {stratagems: []};
-    if (hash.startsWith('~')) {
+    if (hash[0] == '~') {
       for (var k in this.loadouts) {
         for (var i=0; i<this.loadouts[k].length; i++) {
           if (this.loadouts[k][i].id === hash.substring(1)) {
@@ -759,7 +759,7 @@ angular.module('arsenal', ['hash64'])
     return newLoadout;
   };
 
-    arsenal.getRandomLoadout = function(pool) {
+  arsenal.getRandomLoadout = function(pool) {
     var id = Math.floor(Math.random()* this.loadouts[pool].length);
     var rndLoadout = this.getLoadout(this.loadouts[pool][id].hash);
     rndLoadout.id = this.loadouts[pool][id].id;

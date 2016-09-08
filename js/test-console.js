@@ -1,6 +1,14 @@
 "use strict";
 
-var test_console = document.getElementsByClassName("test-console")[0];
+function createConsole() {
+  var d = document.createElement('div');
+  d.id = 'test-console';
+  d.className = 'test-console';
+  document.body.appendChild(d);
+}
+createConsole();
+
+var test_console = document.getElementById("test-console");
 
 function tprint(message){
   test_console.innerHTML += message + "<br>";
