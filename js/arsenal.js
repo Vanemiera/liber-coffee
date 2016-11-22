@@ -219,6 +219,14 @@ angular.module('arsenal', ['hash64'])
         nice: 0.5,
         hell: 4
       }
+    },
+    {//v
+      name: "M2016 'Constitution'",
+      img: "M2016",
+      weights: {
+        nice: 0.5,
+        hell: 4
+      }
     }
   ];
 
