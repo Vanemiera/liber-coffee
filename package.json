@@ -6,8 +6,13 @@
   "repository": "https://github.com/vanemiera/liber-coffee",
   "license": "MIT",
   "devDependencies": {
+    "angular": "1.4.10",
+    "angular-animate": "1.4.10",
+    "angular-loader": "~1.4.0",
+    "angular-mocks": "~1.4.0",
     "http-server": "^0.6.1",
     "jasmine-core": "^2.3.4",
+    "jquery": "~2.1.1",
     "karma": "~0.12",
     "karma-chrome-launcher": "^0.1.12",
     "karma-firefox-launcher": "^0.1.6",
@@ -15,11 +20,7 @@
     "karma-junit-reporter": "^0.2.2",
     "protractor": "^2.1.0",
     "shelljs": "^0.2.6",
-    "jquery": "~2.1.1",
-    "angular": "1.4.10",
-    "angular-animate": "1.4.10",
-    "angular-loader": "~1.4.0",
-    "angular-mocks": "~1.4.0"
+    "svgo": "^0.7.1"
   },
   "scripts": {
     "prestart": "npm install",
@@ -30,6 +31,8 @@
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js  --single-run",
+
+    "svgo": "svgo -f svg -o svgo -q",
 
     "preupdate-webdriver": "npm install",
     "update-webdriver": "webdriver-manager update",
