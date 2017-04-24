@@ -623,6 +623,37 @@ angular.module('arsenal', ['hash64'])
         hash: "deamgM",
         id: "Diva5"
       },
+      {
+        name: "The Gandhi Way",
+        author: "Pelia",
+        description: "Description: Greetings from Super Earth! Our Managed"+
+                     " Democracy is backed... with NUCLEAR WEAPONS!!!",
+        hash: "hkSSSS",
+        id: "nuke4"
+      },
+      {
+        name: "Guns, Guns, Guns!",
+        author: "Pelia",
+        description: "Bring the rain. Ride the lightning. Hear the thunder.",
+        hash: "hmaQTM",
+        id: "21gun"
+      },
+      {
+        name: "Sons of Managed Democracy",
+        author: "Pelia",
+        description: "Y'all thought biker gangs gon' die out on Supr' Earth? Heeeell no!",
+        hash: "jfrwwa",
+        id: "biker"
+      },
+      {
+        name: "When Engineer Is The Turret",
+        author: "Pelia",
+        description: "Now here boons, what the burps, the seal will hurt, send"+
+                     " say and rat my fur, and hurt the meme... Get sparks,"+
+                     " a gamawah! Snurf snurf. It's all about the pose, God.",
+        hash: "oerCxa",
+        id: "bcwrd"
+      },
     ],
     punishments: [
       {

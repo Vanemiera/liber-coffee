@@ -23,18 +23,15 @@
     "svgo": "^0.7.1"
   },
   "scripts": {
-    "prestart": "npm install",
     "start": "http-server -p 8000 -c-1",
 
     "copylibs": "util/copylibs",
 
-    "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js  --single-run",
 
     "svgo": "svgo -f svg -o svgo -q",
 
-    "preupdate-webdriver": "npm install",
     "update-webdriver": "webdriver-manager update",
 
     "preprotractor": "npm run update-webdriver",
