@@ -626,7 +626,7 @@ angular.module('arsenal', ['hash64'])
       {
         name: "The Gandhi Way",
         author: "Pelia",
-        description: "Description: Greetings from Super Earth! Our Managed"+
+        description: "Greetings from Super Earth! Our Managed"+
                      " Democracy is backed... with NUCLEAR WEAPONS!!!",
         hash: "hkSSSS",
         id: "nuke4"
@@ -648,9 +648,9 @@ angular.module('arsenal', ['hash64'])
       {
         name: "When Engineer Is The Turret",
         author: "Pelia",
-        description: "Now here boons, what the burps, the seal will hurt, send"+
+        description: "Now here boons, what the burps, the seal will hurt,"+
                      " say and rat my fur, and hurt the meme... Get sparks,"+
-                     " a gamawah! Snurf snurf. It's all about the pose, God.",
+                     " send a gamawah! Snurf snurf. It's all about the pose, God.",
         hash: "oerCxa",
         id: "bcwrd"
       },
