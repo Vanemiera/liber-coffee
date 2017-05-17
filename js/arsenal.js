@@ -646,6 +646,24 @@ angular.module('arsenal', ['hash64'])
         id: "biker"
       },
       {
+        name: "The Independence",
+        author: "Pelia",
+        description: "Let us make the galaxy independent of its sovereignty and parade all over it.",
+        hash: "hvMKMK",
+        id: "4july"
+      },
+      {
+        name: "Back To Basics",
+        author: "Pelia",
+        description: "I'm sorry sir, our armoury is empty and we only got this stuff from couple centuries back."+
+                     " You get this M1903 Springfield rifle and M32 MGL, and all the hand nades we've got are"+
+                     " the training smokes. Oh and, uh, we found this A10-C in the back of the ship's hangar."+
+                     " We'll drop it into the atmosphere and hope it doesn't burn down."+
+                     " Good news though; we got enough ammo to last you the whole war.",
+        hash: "gvaLMe",
+        id: "sjack"
+      },
+      {
         name: "When Engineer Is The Turret",
         author: "Pelia",
         description: "Now here boons, what the burps, the seal will hurt,"+
@@ -662,6 +680,13 @@ angular.module('arsenal', ['hash64'])
         description: "Presents! :3",
         hash: "hiaaaa",
         id: "vanp1"
+      },
+      {
+        name: "Be Quiet",
+        author: "Pelia",
+        description: "Shhhhh. It's okay. You can do it.",
+        hash: "cnaaBI",
+        id: "shhhh"
       },
       {
         name: "Ambient light",
