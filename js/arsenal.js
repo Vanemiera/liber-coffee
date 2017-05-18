@@ -669,7 +669,7 @@ angular.module('arsenal', ['hash64'])
                      " it matched heavy machinery. This concept has been now modernized and reintroduced,"+
                      " marking the coming of Helldozers. Steamrolling over the undemocratic species of the Milky Way,"+
                      " Helldozers are the true powerhouse of Liberty and Freedom.",
-        hash: "dmbqaj",
+        hash: "debqaj",
         id: "Okill"
       },
       {
