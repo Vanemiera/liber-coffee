@@ -659,7 +659,7 @@ angular.module('arsenal', ['hash64'])
                      " eardrum destruction for you, and some suits of armour to look badass using them."+
                      " We also got this awkward situation where we only got lots of bags for ammo, but no ammo."+
                      " We only managed to scrape up enough to fill you one or two.",
-        hash: "aodKQn",
+        hash: "dodKQn",
         id: "noise"
       },
       {
