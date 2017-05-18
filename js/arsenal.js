@@ -639,13 +639,6 @@ angular.module('arsenal', ['hash64'])
         id: "21gun"
       },
       {
-        name: "Sons of Managed Democracy",
-        author: "Pelia",
-        description: "Y'all thought biker gangs gon' die out on Supr' Earth? Heeeell no!",
-        hash: "jfrwwa",
-        id: "biker"
-      },
-      {
         name: "The Independence",
         author: "Pelia",
         description: "Let us make the galaxy independent of its sovereignty and parade all over it.",
@@ -653,15 +646,24 @@ angular.module('arsenal', ['hash64'])
         id: "4july"
       },
       {
-        name: "Back To Basics",
+        name: "Go Loud",
         author: "Pelia",
-        description: "I'm sorry sir, our armoury is empty and we only got this stuff from couple centuries back."+
-                     " You get this M1903 Springfield rifle and M32 MGL, and all the hand nades we've got are"+
-                     " the training smokes. Oh and, uh, we found this A10-C in the back of the ship's hangar."+
-                     " We'll drop it into the atmosphere and hope it doesn't burn down."+
-                     " Good news though; we got enough ammo to last you the whole war.",
-        hash: "gvaLMe",
-        id: "sjack"
+        description: "Simon Viklund's soundtrack is not included, but we do have some super-modern tools of"+
+                     " eardrum destruction for you, and some suits of armour to look badass using them."+
+                     " We also got this awkward situation where we only got lots of bags for ammo, but no ammo."+
+                     " We only managed to scrape up enough to fill you one or two.",
+        hash: "dodKQn",
+        id: "noise"
+      },
+      {
+        name: "Helldozer",
+        author: "Pelia",
+        description: "There was once a law enforcement officer outfitted with such raw strength and firepower"+
+                     " it matched heavy machinery. This concept has been now modernized and reintroduced,"+
+                     " marking the coming of Helldozers. Steamrolling over the undemocratic species of the Milky Way,"+
+                     " Helldozers are the true powerhouse of Liberty and Freedom.",
+        hash: "debqaj",
+        id: "Okill"
       },
       {
         name: "When Engineer Is The Turret",
@@ -685,8 +687,26 @@ angular.module('arsenal', ['hash64'])
         name: "Be Quiet",
         author: "Pelia",
         description: "Shhhhh. It's okay. You can do it.",
-        hash: "cnaaBI",
+        hash: "anaaBI",
         id: "shhhh"
+      },
+      {
+        name: "Sons of Managed Democracy",
+        author: "Pelia",
+        description: "Y'all thought biker gangs gon' die out on Supr' Earth? Heeeell no!",
+        hash: "jfrwwa",
+        id: "biker"
+      },
+      {
+        name: "Back To Basics",
+        author: "Pelia",
+        description: "I'm sorry sir, our armoury is empty and we only got this stuff from couple centuries back."+
+                     " You get this M1903 Springfield rifle, all the hand nades we've got are the training smokes,"+
+                     " but at least we found crates on crates of AT4s. Oh and, uh, we found this A10-C in the back"+
+                     " of the ship's hangar. We'll drop it into the atmosphere and hope it doesn't burn down."+
+                     " Good news though; we got enough vintage cartridges to last you the whole war.",
+        hash: "gvaLMj",
+        id: "sjack"
       },
       {
         name: "Ambient light",
