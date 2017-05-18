@@ -701,11 +701,11 @@ angular.module('arsenal', ['hash64'])
         name: "Back To Basics",
         author: "Pelia",
         description: "I'm sorry sir, our armoury is empty and we only got this stuff from couple centuries back."+
-                     " You get this M1903 Springfield rifle and M32 MGL, and all the hand nades we've got are"+
-                     " the training smokes. Oh and, uh, we found this A10-C in the back of the ship's hangar."+
-                     " We'll drop it into the atmosphere and hope it doesn't burn down."+
-                     " Good news though; we got enough ammo to last you the whole war.",
-        hash: "gvaLMe",
+                     " You get this M1903 Springfield rifle, all the hand nades we've got are the training smokes,"+
+                     " but at least we found crates on crates of AT4s. Oh and, uh, we found this A10-C in the back"+
+                     " of the ship's hangar. We'll drop it into the atmosphere and hope it doesn't burn down."+
+                     " Good news though; we got enough vintage cartridges to last you the whole war.",
+        hash: "gvaLMj",
         id: "sjack"
       },
       {
