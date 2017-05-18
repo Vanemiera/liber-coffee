@@ -653,6 +653,16 @@ angular.module('arsenal', ['hash64'])
         id: "4july"
       },
       {
+        name: "Go Loud",
+        author: "Pelia",
+        description: "Simon Viklund's soundtrack is not included, but we do have some super-modern tools of"+
+                     " eardrum destruction for you, and some suits of armour to look badass using them."+
+                     " We also got this awkward situation where we only got lots of bags for ammo, but no ammo."+
+                     " We only managed to scrape up enough to fill you one or two.",
+        hash: "aodKQn",
+        id: "noise"
+      },
+      {
         name: "When Engineer Is The Turret",
         author: "Pelia",
         description: "Now here boons, what the burps, the seal will hurt,"+
