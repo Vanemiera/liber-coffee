@@ -639,13 +639,6 @@ angular.module('arsenal', ['hash64'])
         id: "21gun"
       },
       {
-        name: "Sons of Managed Democracy",
-        author: "Pelia",
-        description: "Y'all thought biker gangs gon' die out on Supr' Earth? Heeeell no!",
-        hash: "jfrwwa",
-        id: "biker"
-      },
-      {
         name: "The Independence",
         author: "Pelia",
         description: "Let us make the galaxy independent of its sovereignty and parade all over it.",
@@ -696,6 +689,13 @@ angular.module('arsenal', ['hash64'])
         description: "Shhhhh. It's okay. You can do it.",
         hash: "anaaBI",
         id: "shhhh"
+      },
+      {
+        name: "Sons of Managed Democracy",
+        author: "Pelia",
+        description: "Y'all thought biker gangs gon' die out on Supr' Earth? Heeeell no!",
+        hash: "jfrwwa",
+        id: "biker"
       },
       {
         name: "Back To Basics",
