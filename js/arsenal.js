@@ -698,7 +698,7 @@ angular.module('arsenal', ['hash64'])
         id: "biker"
       },
       {
-        name: "Back To Basics",
+        name: "Back To The Past",
         author: "Pelia",
         description: "I'm sorry sir, our armoury is empty and we only got this stuff from couple centuries back."+
                      " You get this M1903 Springfield rifle, all the hand nades we've got are the training smokes,"+
@@ -706,7 +706,7 @@ angular.module('arsenal', ['hash64'])
                      " of the ship's hangar. We'll drop it into the atmosphere and hope it doesn't burn down."+
                      " Good news though; we got enough vintage cartridges to last you the whole war.",
         hash: "gvaLMj",
-        id: "sjack"
+        id: "pasta"
       },
       {
         name: "Ambient light",
