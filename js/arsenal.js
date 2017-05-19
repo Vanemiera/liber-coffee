@@ -705,7 +705,7 @@ angular.module('arsenal', ['hash64'])
         id: "biker"
       },
       {
-        name: "Back To The Past",
+        name: "Back to the Past",
         author: "Pelia",
         description: "I'm sorry sir, our armoury is empty and we only got this stuff from couple centuries back."+
                      " You get this M1903 Springfield rifle, all the hand nades we've got are the training smokes,"+
