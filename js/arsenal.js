@@ -666,6 +666,13 @@ angular.module('arsenal', ['hash64'])
         id: "Okill"
       },
       {
+        name: "Empyrean Deliverance",
+        author: "Pelia",
+        description: "The sky brings Democracy through your guidance.",
+        hash: "hjRTRT",
+        id: "smite"
+      },
+      {
         name: "When Engineer Is The Turret",
         author: "Pelia",
         description: "Now here boons, what the burps, the seal will hurt,"+
@@ -707,6 +714,13 @@ angular.module('arsenal', ['hash64'])
                      " Good news though; we got enough vintage cartridges to last you the whole war.",
         hash: "gvaLMj",
         id: "pasta"
+      },
+      {
+        name: "Back to Basics",
+        author: "Pelia",
+        description: "Our armoury authentication system went down. You're only getting standard issue for this mission.",
+        hash: "caabDD",
+        id: "basic"
       },
       {
         name: "Ambient light",
