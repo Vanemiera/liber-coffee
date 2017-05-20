@@ -666,6 +666,13 @@ angular.module('arsenal', ['hash64'])
         id: "Okill"
       },
       {
+        name: "Empyrean Deliverance",
+        author: "Pelia",
+        description: "The sky brings Democracy through your guidance.",
+        hash: "hjRTRT",
+        id: "smite"
+      },
+      {
         name: "When Engineer Is The Turret",
         author: "Pelia",
         description: "Now here boons, what the burps, the seal will hurt,"+
@@ -698,7 +705,7 @@ angular.module('arsenal', ['hash64'])
         id: "biker"
       },
       {
-        name: "Back To Basics",
+        name: "Back to the Past",
         author: "Pelia",
         description: "I'm sorry sir, our armoury is empty and we only got this stuff from couple centuries back."+
                      " You get this M1903 Springfield rifle, all the hand nades we've got are the training smokes,"+
@@ -706,7 +713,14 @@ angular.module('arsenal', ['hash64'])
                      " of the ship's hangar. We'll drop it into the atmosphere and hope it doesn't burn down."+
                      " Good news though; we got enough vintage cartridges to last you the whole war.",
         hash: "gvaLMj",
-        id: "sjack"
+        id: "pasta"
+      },
+      {
+        name: "Back to Basics",
+        author: "Pelia",
+        description: "Our armoury authentication system went down. You're only getting standard issue for this mission.",
+        hash: "caabDD",
+        id: "basic"
       },
       {
         name: "Ambient light",
