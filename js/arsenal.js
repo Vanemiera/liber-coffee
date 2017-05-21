@@ -233,7 +233,7 @@ angular.module('arsenal', ['hash64'])
   arsenal.BGCOLOR_SUPPLY = "76, 116, 161";
   arsenal.BGCOLOR_DEFENSIVE = "125, 159, 99";
   arsenal.BGCOLOR_OFFENSIVE = "139, 91, 81";
-
+  
   arsenal.stratagems = [
     {//a
       name: "Resupply",
@@ -681,6 +681,45 @@ angular.module('arsenal', ['hash64'])
         hash: "oerCxa",
         id: "bcwrd"
       },
+      {
+        name: "We're Gonna Have a Blast",
+        author: "Pelia",
+        description: "Yes, I said it. Get blasting!",
+        hash: "jqjsGa",
+        id: "blast"
+      },
+      {
+        name: "Lumie Loadout",
+        author: "Pelia",
+        description: "What I frequent against Illuminates when I actually need to tryhard."+
+                     " Feel free to replace Laser Cannon with MG or Walker with Obsidian, works as well.",
+        hash: "icacMt",
+        id: "Lumie"
+      },
+      {
+        name: "Bug Loadout",
+        author: "Pelia",
+        description: "What I frequent against Bugs when I actually need to tryhard."+
+                     " You can get more EATs, Rumbler, works as well.",
+        hash: "hhajKT",
+        id: "buggy"
+      },
+      {
+        name: "Cyborg Loadout",
+        author: "Pelia",
+        description: "What I frequent against Bugs when I actually need to tryhard."+
+                     " Many, many options here, I might make two of these. Stalwart works as well.",
+        hash: "hoajjS",
+        id: "borgs"
+      },
+      {
+        name: "Cyborg Loadout 2",
+        author: "Pelia",
+        description: "What I frequent against Bugs when I actually need to tryhard."+
+                     " So many options, I made two loadouts! This is the second.",
+        hash: "dmafTT",
+        id: "Borgs"
+      },
     ],
     punishments: [
       {
@@ -719,7 +758,7 @@ angular.module('arsenal', ['hash64'])
         name: "Back to Basics",
         author: "Pelia",
         description: "Our armoury authentication system went down. You're only getting standard issue for this mission.",
-        hash: "caabDD",
+        hash: "caabDL",
         id: "basic"
       },
       {
