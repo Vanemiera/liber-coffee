@@ -758,7 +758,7 @@ angular.module('arsenal', ['hash64'])
         name: "Back to Basics",
         author: "Pelia",
         description: "Our armoury authentication system went down. You're only getting standard issue for this mission.",
-        hash: "caabDD",
+        hash: "caabDL",
         id: "basic"
       },
       {
