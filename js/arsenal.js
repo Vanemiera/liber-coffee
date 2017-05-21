@@ -233,7 +233,7 @@ angular.module('arsenal', ['hash64'])
   arsenal.BGCOLOR_SUPPLY = "76, 116, 161";
   arsenal.BGCOLOR_DEFENSIVE = "125, 159, 99";
   arsenal.BGCOLOR_OFFENSIVE = "139, 91, 81";
-
+  
   arsenal.stratagems = [
     {//a
       name: "Resupply",
@@ -680,6 +680,37 @@ angular.module('arsenal', ['hash64'])
                      " send a gamawah! Snurf snurf. It's all about the pose, God.",
         hash: "oerCxa",
         id: "bcwrd"
+      },
+      {
+        name: "We're Gonna Have a Blast",
+        author: "Pelia",
+        description: "Yes, I said it. Get blasting!",
+        hash: "jqjsGa",
+        id: "blast"
+      },
+      {
+        name: "Lumie Loadout",
+        author: "Pelia",
+        description: "What I frequent against Illuminates when I actually need to tryhard."+
+                     " Feel free to replace Laser Cannon with MG or Walker with Obsidian, works as well.",
+        hash: "icacMt",
+        id: "Lumie"
+      },
+      {
+        name: "Bug Loadout",
+        author: "Pelia",
+        description: "What I frequent against Bugs when I actually need to tryhard."+
+                     " You can get more EATs, Rumbler, works as well.",
+        hash: "hhajKT",
+        id: "buggy"
+      },
+      {
+        name: "Cyborg Loadout",
+        author: "Pelia",
+        description: "What I frequent against Bugs when I actually need to tryhard."+
+                     " Many, many options here, I just picked one.",
+        hash: "dmajjS",
+        id: "borgs"
       },
     ],
     punishments: [
