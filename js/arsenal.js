@@ -707,7 +707,7 @@ angular.module('arsenal', ['hash64'])
       {
         name: "Cyborg Loadout",
         author: "Pelia",
-        description: "What I frequent against Bugs when I actually need to tryhard."+
+        description: "What I frequent against Cyborgs when I actually need to tryhard."+
                      " Many, many options here, I might make two of these. Stalwart works as well.",
         hash: "hoajjS",
         id: "borgs"
@@ -715,10 +715,17 @@ angular.module('arsenal', ['hash64'])
       {
         name: "Cyborg Loadout 2",
         author: "Pelia",
-        description: "What I frequent against Bugs when I actually need to tryhard."+
+        description: "What I frequent against Cyborgs when I actually need to tryhard."+
                      " So many options, I made two loadouts! This is the second.",
         hash: "dmafTT",
         id: "Borgs"
+      },
+      {
+        name: "Demolition Man",
+        author: "Pelia",
+        description: "Splosives. Yes."
+        hash: "ciassj",
+        id: "kboom"
       },
     ],
     punishments: [
