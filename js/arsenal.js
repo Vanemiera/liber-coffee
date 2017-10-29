@@ -233,7 +233,7 @@ angular.module('arsenal', ['hash64'])
   arsenal.BGCOLOR_SUPPLY = "76, 116, 161";
   arsenal.BGCOLOR_DEFENSIVE = "125, 159, 99";
   arsenal.BGCOLOR_OFFENSIVE = "139, 91, 81";
-  
+
   arsenal.stratagems = [
     {//a
       name: "Resupply",
@@ -505,6 +505,21 @@ angular.module('arsenal', ['hash64'])
       weights: {
         nice: 5
       }
+    },
+    {//V
+      name: "A/GL-8 Launcher Turret",
+      img: "Launcher_Turret",
+      color: arsenal.BGCOLOR_DEFENSIVE
+    },
+    {//W
+      name: "Heavy Strafing Run",
+      img: "Heavy_Strafing_Run",
+      color: arsenal.BGCOLOR_OFFENSIVE
+    },
+    {//X
+      name: "Thunderer Smoke Round",
+      img: "Thunderer_Smoke_Round",
+      color: arsenal.BGCOLOR_DEFENSIVE
     }
   ];
 
@@ -723,7 +738,7 @@ angular.module('arsenal', ['hash64'])
       {
         name: "Demolition Man",
         author: "Pelia",
-        description: "Splosives. Yes."
+        description: "Splosives. Yes.",
         hash: "ciassj",
         id: "kboom"
       },
