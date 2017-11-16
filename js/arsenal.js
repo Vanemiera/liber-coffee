@@ -742,6 +742,30 @@ angular.module('arsenal', ['hash64'])
         hash: "ciassj",
         id: "kboom"
       },
+      {
+        name: "Your Shields Are Adorable",
+        author: "jophur",
+        description: "Best vs. Illuminate.  Clear scouts and monks with Punisher."+
+                     " Everybody else gets bullets from heaven.",
+        hash: "jeoMMM",
+        id: "skeet"
+      },
+      {
+        name: "Plan B",
+        author: "jophur",
+        description: "For Impalers on the far side of Mars, there's Sledge. For"+
+                     " everything else... there's MasterCard.",
+        hash: "hblfaU",
+        id: "planB"
+      },
+      {
+        name: "Grotesque Pit-Fighter",
+        author: "jophur",
+        description: "Everybody gather in, now. That's right, get close, pretend"+
+                     " you like each other.  Okay, say 'Cheese'!",
+        hash: "buprTT",
+        id: "pitfi"
+      }
     ],
     punishments: [
       {
@@ -790,6 +814,13 @@ angular.module('arsenal', ['hash64'])
         hash: "hlSSSS",
         id: "vanp2"
       },
+      {
+        name: "Smoke 'n Mirrors'",
+        author: "BRODIN'S SWOLDIER",
+        description: "",
+        hash: "hjXXXX",
+        id: "smoke"
+      }
     ]
   };
 
