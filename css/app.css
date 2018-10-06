@@ -1,8 +1,14 @@
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   background-image: url("../img/wallpaper_helldivers.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-color: black;
+  background-size: cover;
 }
 
 @font-face {
