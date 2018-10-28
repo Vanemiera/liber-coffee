@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 300 300"
+   height="300"
+   width="300">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="path4167"
+     d="m 54.025424,263.77119 -24.788136,0 0,-44.80933 L 27.012712,190.67797 48.622881,176.37712 81.673729,150 l 0,-48.94068 27.330511,-20.338981 0,-10.487288 16.84322,-15.254238 17.16101,0 0,-27.012712 16.84323,-15.572034 112.1822,2.542373 8.58051,7.944916 0,176.377114 -11.92002,6.88203 -34.47829,0 -64.51271,25.53323 0,23.19915 -50.84746,13.34746 -17.79661,-6.35593 0,17.47881 4.13136,8.89831 -5.720341,5.40254 -20.974576,0 -12.076271,-12.07627 5.720339,-40.99577 -7.944916,0 0,8.26272 z"
+     style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" />
+  <circle
+     style="opacity:1;fill:#b6cbcc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-opacity:1"
+     id="path4326"
+     cx="213.82668"
+     cy="43.001339"
+     r="15.493553" />
+  <circle
+     r="15.493553"
+     cy="44.349636"
+     cx="250.23068"
+     id="circle4149"
+     style="opacity:1;fill:#b6cbcc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-opacity:1" />
+  <use
+     height="100%"
+     width="100%"
+     transform="translate(0.89886455,38.201744)"
+     id="use4155"
+     xlink:href="#path4326"
+     y="0"
+     x="0" />
+  <use
+     height="100%"
+     width="100%"
+     transform="translate(0.89886455,38.201744)"
+     id="use4157"
+     xlink:href="#circle4149"
+     y="0"
+     x="0" />
+  <use
+     height="100%"
+     width="100%"
+     transform="translate(0.44943228,37.302879)"
+     id="use4159"
+     xlink:href="#use4155"
+     y="0"
+     x="0" />
+  <use
+     height="100%"
+     width="100%"
+     transform="translate(0.44943228,37.302879)"
+     id="use4161"
+     xlink:href="#use4157"
+     y="0"
+     x="0" />
+  <use
+     height="100%"
+     width="100%"
+     transform="translate(0,35.954582)"
+     id="use4163"
+     xlink:href="#use4159"
+     y="0"
+     x="0" />
+  <use
+     height="100%"
+     width="100%"
+     transform="translate(0,35.954582)"
+     id="use4165"
+     xlink:href="#use4161"
+     y="0"
+     x="0" />
+</svg>

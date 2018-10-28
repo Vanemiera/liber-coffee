@@ -520,6 +520,11 @@ angular.module('arsenal', ['hash64'])
       name: "Thunderer Smoke Round",
       img: "Thunderer_Smoke_Round",
       color: arsenal.BGCOLOR_DEFENSIVE
+    },
+    {//Y
+      name: "MGX-42 Machine Gun",
+      img: "MGX-42",
+      color: arsenal.BGCOLOR_SUPPLY
     }
   ];
 
